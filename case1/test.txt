@@ -29,6 +29,11 @@ eye test.n3 --query query3.n3q>proof3.n3
 eye --nope proof3.n3 proof-parser-rule.n3 --query proof-parser-query.n3q >result33.n3
 
 
+#similarly, if separate the rule and query, the unexpected statement is gone.
+eye --nope proof3.n3 proof-parser-rule.n3 --pass >result33_temp.n3
+eye --nope result33_temp.n3 --query proof-parser-query.n3q >result33-2.n3
+
+
 
 #debug
 #use find all in rules, result contains unexpected statement:{:A11 skos:broadTransitive :B1} :dataFact ({:A11 skos:broadTransitive :A1}).
