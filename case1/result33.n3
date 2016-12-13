@@ -1,0 +1,19 @@
+#Processed by EYE v16.1209.1430 beta josd
+#eye --nope proof3.n3 proof-parser-rule.n3 --query proof-parser-query.n3q
+
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX : <http://www.terminology.org#>
+PREFIX r: <http://www.w3.org/2000/10/swap/reason#>
+PREFIX list: <http://www.w3.org/2000/10/swap/list#>
+PREFIX e: <http://eulersharp.sourceforge.net/2003/03swap/log-rules#>
+PREFIX string: <http://www.w3.org/2000/10/swap/string#>
+PREFIX log: <http://www.w3.org/2000/10/swap/log#>
+
+{:A11 skos:broadTransitive :B1} :ruleFact ({{_:sk_0 skos:broadTransitive _:sk_1.
+    _:sk_1 skos:broadTransitive _:sk_2} => {_:sk_0 skos:broadTransitive _:sk_2}}).
+{:A11 skos:broadTransitive :B1} :dataFact ({:A11 skos:broadTransitive :A1}).
+{:A11 skos:broadTransitive :B1} :dataFact ({:A11 skos:broadTransitive :A1} {:A1 skos:broadTransitive :B11} {:B11 skos:broadTransitive :B1}).
+
+#2016-12-11T10:33:05.071Z in=48 out=3 ent=18 step=52 brake=5 inf=86231 sec=0.031 inf/sec=2781645
+#ENDS
+

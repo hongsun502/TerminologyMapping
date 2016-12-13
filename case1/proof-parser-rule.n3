@@ -1,0 +1,95 @@
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX : <http://www.terminology.org#>
+PREFIX r: <http://www.w3.org/2000/10/swap/reason#>
+PREFIX list: <http://www.w3.org/2000/10/swap/list#>
+PREFIX e: <http://eulersharp.sourceforge.net/2003/03swap/log-rules#>
+PREFIX string: <http://www.w3.org/2000/10/swap/string#>
+PREFIX log: <http://www.w3.org/2000/10/swap/log#>
+
+
+#{ ?lemma a r:Extraction. ?lemma r:gives ?fact. } => {?lemma :fact ?fact.}. 
+
+
+
+# The facts extracted from files other than query are considered as fact.
+{ 
+	?lemma a r:Extraction. 
+	?lemma r:because [ r:source ?source ].
+	?source log:uri ?source_string.
+	?scope e:fail {?source_string string:contains ".n3q"}.
+	?lemma r:gives ?gives. 
+	?gives e:labelvars ?fact.
+} => {?lemma :fact ?fact.}. 
+  
+  
+  
+
+##{ 
+##	?lemma a r:Extraction. 
+##	?lemma r:gives ?gives. 
+##	?gives e:labelvars ?fact.
+##} => {?lemma :fact ?fact.}. 
+
+
+#{ ?lemma a r:Inference. ?lemma r:rule ?rule. ?rule :fact ?fact.} => {?lemma :ruleFact ?fact.}. 
+
+{ 
+	?lemma a r:Inference. 
+	?lemma r:rule ?rule. 
+	?rule :fact ?fact.	
+} => {
+	?lemma :ruleFact ?fact.
+}. 
+
+
+{ 
+	?lemma a r:Inference. 
+	?lemma r:evidence ?evidence. 
+	?evidence list:member ?sub_lemma.
+	?sub_lemma :fact ?fact.
+} => {
+	?lemma :dataFact ?fact.
+}. 
+
+{ 
+	?lemma a r:Inference. 
+	?lemma r:evidence ?evidence. 
+	?evidence list:member ?sub_lemma.
+	?sub_lemma :dataFact ?fact.
+} => {
+	?lemma :dataFact ?fact.
+}. 
+
+
+{ 
+	?lemma a r:Inference. 
+	?lemma r:evidence ?evidence. 
+	?evidence list:member ?sub_lemma.
+	?sub_lemma :ruleFact ?fact.
+} => {
+	?lemma :ruleFact ?fact.
+}. 
+
+
+
+
+##{ 
+##	?proof a r:Proof.
+##	?proof r:component ?lemma.
+##	?lemma r:gives ?output.
+##	?scope e:findall (?fact { ?lemma :ruleFact ?fact. } ?fact_list ) .
+##	
+##} => {
+##	?output :ruleFactSet ?fact_list.
+##}. 
+##
+##
+##{ 
+##	?proof a r:Proof.
+##	?proof r:component ?lemma.
+##	?lemma r:gives ?output.
+##	?scope e:findall (?fact { ?lemma :dataFact ?fact. } ?fact_list ) .	
+##	[] e:trace (?lemma ?fact_list).
+##} => {
+##	?output :dataFactSet ?fact_list.
+##}. 

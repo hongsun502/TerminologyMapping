@@ -1,0 +1,28 @@
+eye test.n3 --query query.n3q>proof.n3
+
+eye --nope proof.n3 proof-parser-rule.n3 --query proof-parser-query.n3q >result.n3
+
+
+eye --nope proof.n3 proof-parser-rule.n3 --pass >temp.n3
+
+
+eye --nope temp.n3 --query proof-parser-query.n3q >result2.n3
+
+
+
+
+eye --nope --tactic limited-step 100 proof.n3 proof-parser-rule.n3 --query proof-parser-query.n3q >result3.n3
+
+
+
+
+eye test.n3 --query query2.n3q>proof2.n3
+
+eye --nope proof2.n3 proof-parser-rule.n3 --query proof-parser-query.n3q >result22.n3
+
+
+
+eye test.n3 --query query3.n3q>proof3.n3
+
+eye --nope proof3.n3 proof-parser-rule.n3 --query proof-parser-query.n3q >result33.n3
+

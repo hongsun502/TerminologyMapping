@@ -1,0 +1,49 @@
+#Processed by EYE v16.1209.1430 beta josd
+#eye --nope proof.n3 proof-parser-rule.n3 --pass-only-new
+
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX : <http://www.terminology.org#>
+PREFIX r: <http://www.w3.org/2000/10/swap/reason#>
+PREFIX list: <http://www.w3.org/2000/10/swap/list#>
+PREFIX e: <http://eulersharp.sourceforge.net/2003/03swap/log-rules#>
+PREFIX string: <http://www.w3.org/2000/10/swap/string#>
+PREFIX log: <http://www.w3.org/2000/10/swap/log#>
+
+<file:///c:/users/hong/documents/terminology%20mapping/terminology%20test/proof.n3#lemma7> :fact {:A11 skos:broadTransitive :A1}.
+<file:///c:/users/hong/documents/terminology%20mapping/terminology%20test/proof.n3#lemma9> :fact {:A1 skos:broadTransitive :B11}.
+<file:///c:/users/hong/documents/terminology%20mapping/terminology%20test/proof.n3#lemma10> :fact {:B11 skos:broadTransitive :B1}.
+<file:///c:/users/hong/documents/terminology%20mapping/terminology%20test/proof.n3#lemma14> :fact {{_:sk_0 skos:broadTransitive _:sk_1.
+    _:sk_1 skos:broadTransitive _:sk_2} => {_:sk_0 skos:broadTransitive _:sk_2}}.
+<file:///c:/users/hong/documents/terminology%20mapping/terminology%20test/proof.n3#lemma11> :ruleFact {{_:sk_0 skos:broadTransitive _:sk_1.
+    _:sk_1 skos:broadTransitive _:sk_2} => {_:sk_0 skos:broadTransitive _:sk_2}}.
+<file:///c:/users/hong/documents/terminology%20mapping/terminology%20test/proof.n3#lemma12> :ruleFact {{_:sk_0 skos:broadTransitive _:sk_1.
+    _:sk_1 skos:broadTransitive _:sk_2} => {_:sk_0 skos:broadTransitive _:sk_2}}.
+<file:///c:/users/hong/documents/terminology%20mapping/terminology%20test/proof.n3#lemma13> :ruleFact {{_:sk_0 skos:broadTransitive _:sk_1.
+    _:sk_1 skos:broadTransitive _:sk_2} => {_:sk_0 skos:broadTransitive _:sk_2}}.
+<file:///c:/users/hong/documents/terminology%20mapping/terminology%20test/proof.n3#lemma1> :dataFact {:A11 skos:broadTransitive :A1}.
+<file:///c:/users/hong/documents/terminology%20mapping/terminology%20test/proof.n3#lemma2> :dataFact {:A1 skos:broadTransitive :B11}.
+<file:///c:/users/hong/documents/terminology%20mapping/terminology%20test/proof.n3#lemma3> :dataFact {:B11 skos:broadTransitive :B1}.
+<file:///c:/users/hong/documents/terminology%20mapping/terminology%20test/proof.n3#lemma11> :dataFact {:A11 skos:broadTransitive :A1}.
+<file:///c:/users/hong/documents/terminology%20mapping/terminology%20test/proof.n3#lemma11> :dataFact {:A1 skos:broadTransitive :B11}.
+<file:///c:/users/hong/documents/terminology%20mapping/terminology%20test/proof.n3#lemma12> :dataFact {:A1 skos:broadTransitive :B11}.
+<file:///c:/users/hong/documents/terminology%20mapping/terminology%20test/proof.n3#lemma12> :dataFact {:B11 skos:broadTransitive :B1}.
+<file:///c:/users/hong/documents/terminology%20mapping/terminology%20test/proof.n3#lemma13> :dataFact {:A11 skos:broadTransitive :A1}.
+<file:///c:/users/hong/documents/terminology%20mapping/terminology%20test/proof.n3#lemma4> :dataFact {:A11 skos:broadTransitive :A1}.
+<file:///c:/users/hong/documents/terminology%20mapping/terminology%20test/proof.n3#lemma4> :dataFact {:A1 skos:broadTransitive :B11}.
+<file:///c:/users/hong/documents/terminology%20mapping/terminology%20test/proof.n3#lemma5> :dataFact {:A1 skos:broadTransitive :B11}.
+<file:///c:/users/hong/documents/terminology%20mapping/terminology%20test/proof.n3#lemma5> :dataFact {:B11 skos:broadTransitive :B1}.
+<file:///c:/users/hong/documents/terminology%20mapping/terminology%20test/proof.n3#lemma6> :dataFact {:A11 skos:broadTransitive :A1}.
+<file:///c:/users/hong/documents/terminology%20mapping/terminology%20test/proof.n3#lemma13> :dataFact {:A1 skos:broadTransitive :B11}.
+<file:///c:/users/hong/documents/terminology%20mapping/terminology%20test/proof.n3#lemma13> :dataFact {:B11 skos:broadTransitive :B1}.
+<file:///c:/users/hong/documents/terminology%20mapping/terminology%20test/proof.n3#lemma4> :ruleFact {{_:sk_0 skos:broadTransitive _:sk_1.
+    _:sk_1 skos:broadTransitive _:sk_2} => {_:sk_0 skos:broadTransitive _:sk_2}}.
+<file:///c:/users/hong/documents/terminology%20mapping/terminology%20test/proof.n3#lemma5> :ruleFact {{_:sk_0 skos:broadTransitive _:sk_1.
+    _:sk_1 skos:broadTransitive _:sk_2} => {_:sk_0 skos:broadTransitive _:sk_2}}.
+<file:///c:/users/hong/documents/terminology%20mapping/terminology%20test/proof.n3#lemma6> :ruleFact {{_:sk_0 skos:broadTransitive _:sk_1.
+    _:sk_1 skos:broadTransitive _:sk_2} => {_:sk_0 skos:broadTransitive _:sk_2}}.
+<file:///c:/users/hong/documents/terminology%20mapping/terminology%20test/proof.n3#lemma6> :dataFact {:A1 skos:broadTransitive :B11}.
+<file:///c:/users/hong/documents/terminology%20mapping/terminology%20test/proof.n3#lemma6> :dataFact {:B11 skos:broadTransitive :B1}.
+
+#2016-12-10T21:57:48.417Z in=75 out=27 ent=27 step=82 brake=5 inf=114907 sec=0.046 inf/sec=2497978
+#ENDS
+

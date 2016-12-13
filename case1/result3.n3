@@ -1,0 +1,31 @@
+#Processed by EYE v16.1209.1430 beta josd
+#eye --nope --tactic limited-step 100 proof.n3 proof-parser-rule.n3 --query proof-parser-query.n3q
+
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX : <http://www.terminology.org#>
+PREFIX r: <http://www.w3.org/2000/10/swap/reason#>
+PREFIX list: <http://www.w3.org/2000/10/swap/list#>
+PREFIX e: <http://eulersharp.sourceforge.net/2003/03swap/log-rules#>
+PREFIX string: <http://www.w3.org/2000/10/swap/string#>
+PREFIX log: <http://www.w3.org/2000/10/swap/log#>
+
+{:A11 skos:broadTransitive :A1} :ruleFact ().
+{:A1 skos:broadTransitive :B11} :ruleFact ().
+{:B11 skos:broadTransitive :B1} :ruleFact ().
+{:A11 skos:broadTransitive :B11} :ruleFact ({{_:sk_0 skos:broadTransitive _:sk_1.
+    _:sk_1 skos:broadTransitive _:sk_2} => {_:sk_0 skos:broadTransitive _:sk_2}}).
+{:A1 skos:broadTransitive :B1} :ruleFact ({{_:sk_0 skos:broadTransitive _:sk_1.
+    _:sk_1 skos:broadTransitive _:sk_2} => {_:sk_0 skos:broadTransitive _:sk_2}}).
+{:A11 skos:broadTransitive :B1} :ruleFact ({{_:sk_0 skos:broadTransitive _:sk_1.
+    _:sk_1 skos:broadTransitive _:sk_2} => {_:sk_0 skos:broadTransitive _:sk_2}}).
+{:A11 skos:broadTransitive :A1} :dataFact ({:A11 skos:broadTransitive :A1}).
+{:A1 skos:broadTransitive :B11} :dataFact ({:A1 skos:broadTransitive :B11}).
+{:B11 skos:broadTransitive :B1} :dataFact ({:B11 skos:broadTransitive :B1}).
+{:A11 skos:broadTransitive :B11} :dataFact ({:A11 skos:broadTransitive :A1} {:A1 skos:broadTransitive :B11}).
+{:A1 skos:broadTransitive :B1} :dataFact ({:A1 skos:broadTransitive :B11} {:B11 skos:broadTransitive :B1}).
+{:A11 skos:broadTransitive :B1} :dataFact ({:A11 skos:broadTransitive :A1}).
+{:A11 skos:broadTransitive :B1} :dataFact ({:A11 skos:broadTransitive :A1} {:A1 skos:broadTransitive :B11} {:B11 skos:broadTransitive :B1}).
+
+#2016-12-10T23:45:05.713Z in=77 out=13 ent=40 step=101 brake=5 inf=122629 sec=0.046 inf/sec=2665848
+#ENDS
+

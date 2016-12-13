@@ -1,0 +1,4 @@
+prefix skos: <http://www.w3.org/2004/02/skos/core#>
+prefix : <http://www.terminology.org#>
+
+{ :A11 skos:broadTransitive :B1. } => {  :A11 skos:broadTransitive :B1.}.
