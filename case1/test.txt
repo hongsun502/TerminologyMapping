@@ -31,8 +31,13 @@ eye --nope proof3.n3 proof-parser-rule.n3 --query proof-parser-query.n3q >result
 
 
 #debug
+#use find all in rules, result contains unexpected statement:{:A11 skos:broadTransitive :B1} :dataFact ({:A11 skos:broadTransitive :A1}).
 eye --nope proof3.n3 proof-parser-rule-debug.n3 --query proof-parser-query-debug.n3q >result33-debug.n3
 
+#break the proof-parser-rule-debug.n3 rule into two rules, result still contains unexpected statement:{:A11 skos:broadTransitive :B1} :dataFact ({:A11 skos:broadTransitive :A1}).
+eye --nope proof3.n3 proof-parser-rule.n3 proof-parser-rule-debug-2.n3 --query proof-parser-query-debug.n3q >result33-debug.n3
+
+#It was a mistake, the rules stated in proof-parser-rule.n3 is also stated in proof-parser-rule-debug.n3, 
+#however, the exepcted statement is accidentally gone.
 eye --nope proof3.n3 proof-parser-rule.n3 proof-parser-rule-debug.n3 --query proof-parser-query-debug.n3q >result33-debug.n3
 
-eye --nope proof3.n3 proof-parser-rule.n3 proof-parser-rule-debug-2.n3 --query proof-parser-query-debug.n3q >result33-debug.n3
