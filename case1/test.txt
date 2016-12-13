@@ -28,3 +28,11 @@ eye --nope proof2.n3 proof-parser-rule.n3 --query proof-parser-query.n3q >result
 eye test.n3 --query query3.n3q>proof3.n3
 eye --nope proof3.n3 proof-parser-rule.n3 --query proof-parser-query.n3q >result33.n3
 
+
+
+#debug
+eye --nope proof3.n3 proof-parser-rule-debug.n3 --query proof-parser-query-debug.n3q >result33-debug.n3
+
+eye --nope proof3.n3 proof-parser-rule.n3 proof-parser-rule-debug.n3 --query proof-parser-query-debug.n3q >result33-debug.n3
+
+eye --nope proof3.n3 proof-parser-rule.n3 proof-parser-rule-debug-2.n3 --query proof-parser-query-debug.n3q >result33-debug.n3

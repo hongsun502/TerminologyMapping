@@ -67,23 +67,23 @@ PREFIX log: <http://www.w3.org/2000/10/swap/log#>
 
 
 
-##{ 
-##	?proof a r:Proof.
-##	?proof r:component ?lemma.
-##	?lemma r:gives ?output.
-##	?scope e:findall (?fact { ?lemma :ruleFact ?fact. } ?fact_list ) .
-##	
-##} => {
-##	?output :ruleFactSet ?fact_list.
-##}. 
-##
-##
-##{ 
-##	?proof a r:Proof.
-##	?proof r:component ?lemma.
-##	?lemma r:gives ?output.
-##	?scope e:findall (?fact { ?lemma :dataFact ?fact. } ?fact_list ) .	
-##	[] e:trace (?lemma ?fact_list).
-##} => {
-##	?output :dataFactSet ?fact_list.
-##}. 
+{ 
+	?proof a r:Proof.
+	?proof r:component ?lemma.
+	?lemma r:gives ?output.
+	?scope e:findall (?fact { ?lemma :ruleFact ?fact. } ?fact_list ) .
+	
+} => {
+	?output :ruleFactSet ?fact_list.
+}. 
+
+
+{ 
+	?proof a r:Proof.
+	?proof r:component ?lemma.
+	?lemma r:gives ?output.
+	?scope e:findall (?fact { ?lemma :dataFact ?fact. } ?fact_list ) .	
+	[] e:trace (?scope ?output ?lemma ?fact_list).
+} => {
+	?output :dataFactSet ?fact_list.
+}. 

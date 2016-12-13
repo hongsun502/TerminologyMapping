@@ -34,13 +34,13 @@ PREFIX r: <http://www.w3.org/2000/10/swap/reason#>
   r:gives {
     {:A11 skos:broadTransitive :B1} => {:A11 skos:broadTransitive :B1}.
   };
-  r:because [ a r:Parsing; r:source <file:///c:/users/hong/documents/terminology%20mapping/terminology%20test/query3.n3q>].
+  r:because [ a r:Parsing; r:source <file:///d:/users/axifx/documents/github/terminologymapping/case1/query3.n3q>].
 
 <#lemma4> a r:Extraction; 
   r:gives {
     :A11 skos:broadTransitive :A1.
   };
-  r:because [ a r:Parsing; r:source <file:///c:/users/hong/documents/terminology%20mapping/terminology%20test/test.n3>].
+  r:because [ a r:Parsing; r:source <file:///d:/users/axifx/documents/github/terminologymapping/case1/test.n3>].
 
 <#lemma5> a r:Inference; 
   r:gives {
@@ -57,20 +57,20 @@ PREFIX r: <http://www.w3.org/2000/10/swap/reason#>
     {?x_0_2 skos:broadTransitive ?x_1_2.
       ?x_1_2 skos:broadTransitive ?x_2_2} => {?x_0_2 skos:broadTransitive ?x_2_2}.
   };
-  r:because [ a r:Parsing; r:source <file:///c:/users/hong/documents/terminology%20mapping/terminology%20test/test.n3>].
+  r:because [ a r:Parsing; r:source <file:///d:/users/axifx/documents/github/terminologymapping/case1/test.n3>].
 
 <#lemma7> a r:Extraction; 
   r:gives {
     :A1 skos:broadTransitive :B11.
   };
-  r:because [ a r:Parsing; r:source <file:///c:/users/hong/documents/terminology%20mapping/terminology%20test/test.n3>].
+  r:because [ a r:Parsing; r:source <file:///d:/users/axifx/documents/github/terminologymapping/case1/test.n3>].
 
 <#lemma8> a r:Extraction; 
   r:gives {
     :B11 skos:broadTransitive :B1.
   };
-  r:because [ a r:Parsing; r:source <file:///c:/users/hong/documents/terminology%20mapping/terminology%20test/test.n3>].
+  r:because [ a r:Parsing; r:source <file:///d:/users/axifx/documents/github/terminologymapping/case1/test.n3>].
 
-#2016-12-11T10:33:00.187Z in=5 out=1 ent=4 step=12 brake=3 inf=33828 sec=0.046 inf/sec=735391
+#2016-12-13T13:16:04.357Z in=5 out=1 ent=4 step=12 brake=3 inf=32218 sec=0.015 inf/sec=2147867
 #ENDS
 
