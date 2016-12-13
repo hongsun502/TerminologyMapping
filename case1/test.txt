@@ -1,28 +1,30 @@
+
+#generate proof
 eye test.n3 --query query.n3q>proof.n3
 
+#parse proof, and output the rule fact and data fact
 eye --nope proof.n3 proof-parser-rule.n3 --query proof-parser-query.n3q >result.n3
 
 
+#parse proof, use pass to output the results to a temporary file.
 eye --nope proof.n3 proof-parser-rule.n3 --pass >temp.n3
 
-
+#query the temporary file to generate the rule fact and data fact.
 eye --nope temp.n3 --query proof-parser-query.n3q >result2.n3
 
+#compared with the resut2.n3 file, the result.n3 file contains one extra fact 
+{:A11 skos:broadTransitive :B1} :dataFact ({:A11 skos:broadTransitive :A1}).
 
 
 
-eye --nope --tactic limited-step 100 proof.n3 proof-parser-rule.n3 --query proof-parser-query.n3q >result3.n3
-
-
-
-
+#query2 is querying an existing statement, and result22.n3 shows the queried statement is an extracted fact, there is no rule needed.
 eye test.n3 --query query2.n3q>proof2.n3
-
 eye --nope proof2.n3 proof-parser-rule.n3 --query proof-parser-query.n3q >result22.n3
 
 
+#query3 is querying an inferred statement, and result33.n3 shows the queried statement is deduced with the given data facts and rule.
+#note: the statement below should be avoided: {:A11 skos:broadTransitive :B1} :dataFact ({:A11 skos:broadTransitive :A1}).
 
 eye test.n3 --query query3.n3q>proof3.n3
-
 eye --nope proof3.n3 proof-parser-rule.n3 --query proof-parser-query.n3q >result33.n3
 
