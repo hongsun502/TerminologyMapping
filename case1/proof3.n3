@@ -8,12 +8,12 @@ PREFIX r: <http://www.w3.org/2000/10/swap/reason#>
 [] a r:Proof, r:Conjunction;
   r:component <#lemma1>;
   r:gives {
-    :A11 skos:broadTransitive :B1.
+    :A11 skos:broaderTransitive :B1.
   }.
 
 <#lemma1> a r:Inference; 
   r:gives {
-    :A11 skos:broadTransitive :B1.
+    :A11 skos:broaderTransitive :B1.
   }; 
   r:evidence (
     <#lemma2>
@@ -22,7 +22,7 @@ PREFIX r: <http://www.w3.org/2000/10/swap/reason#>
 
 <#lemma2> a r:Inference; 
   r:gives {
-    :A11 skos:broadTransitive :B1.
+    :A11 skos:broaderTransitive :B1.
   }; 
   r:evidence (
     <#lemma4>
@@ -32,19 +32,19 @@ PREFIX r: <http://www.w3.org/2000/10/swap/reason#>
 
 <#lemma3> a r:Extraction; 
   r:gives {
-    {:A11 skos:broadTransitive :B1} => {:A11 skos:broadTransitive :B1}.
+    {:A11 skos:broaderTransitive :B1} => {:A11 skos:broaderTransitive :B1}.
   };
   r:because [ a r:Parsing; r:source <file:///d:/users/axifx/documents/github/terminologymapping/case1/query3.n3q>].
 
 <#lemma4> a r:Extraction; 
   r:gives {
-    :A11 skos:broadTransitive :A1.
+    :A11 skos:broaderTransitive :A1.
   };
   r:because [ a r:Parsing; r:source <file:///d:/users/axifx/documents/github/terminologymapping/case1/test.n3>].
 
 <#lemma5> a r:Inference; 
   r:gives {
-    :A1 skos:broadTransitive :B1.
+    :A1 skos:broaderTransitive :B1.
   }; 
   r:evidence (
     <#lemma7>
@@ -54,20 +54,20 @@ PREFIX r: <http://www.w3.org/2000/10/swap/reason#>
 
 <#lemma6> a r:Extraction; 
   r:gives {
-    {?x_0_2 skos:broadTransitive ?x_1_2.
-      ?x_1_2 skos:broadTransitive ?x_2_2} => {?x_0_2 skos:broadTransitive ?x_2_2}.
+    {?x_0_2 skos:broaderTransitive ?x_1_2.
+      ?x_1_2 skos:broaderTransitive ?x_2_2} => {?x_0_2 skos:broaderTransitive ?x_2_2}.
   };
   r:because [ a r:Parsing; r:source <file:///d:/users/axifx/documents/github/terminologymapping/case1/test.n3>].
 
 <#lemma7> a r:Extraction; 
   r:gives {
-    :A1 skos:broadTransitive :B11.
+    :A1 skos:broaderTransitive :B11.
   };
   r:because [ a r:Parsing; r:source <file:///d:/users/axifx/documents/github/terminologymapping/case1/test.n3>].
 
 <#lemma8> a r:Extraction; 
   r:gives {
-    :B11 skos:broadTransitive :B1.
+    :B11 skos:broaderTransitive :B1.
   };
   r:because [ a r:Parsing; r:source <file:///d:/users/axifx/documents/github/terminologymapping/case1/test.n3>].
 

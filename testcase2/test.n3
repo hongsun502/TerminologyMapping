@@ -1,0 +1,7 @@
+prefix skos: <http://www.w3.org/2004/02/skos/core#>
+prefix : <http://www.terminology.org#>
+
+{ ?x skos:broader ?y.  } => {  ?x skos:broaderTransitive ?z.}.
+
+{ ?x skos:broaderTransitive ?y. ?y skos:broaderTransitive ?z. } => {  ?x skos:broaderTransitive ?z.}.
+

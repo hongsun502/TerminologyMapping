@@ -13,7 +13,7 @@ eye --nope proof.n3 proof-parser-rule.n3 --pass >temp.n3
 eye --nope temp.n3 --query proof-parser-query.n3q >result2.n3
 
 #compared with the resut2.n3 file, the result.n3 file contains one extra fact 
-{:A11 skos:broadTransitive :B1} :dataFact ({:A11 skos:broadTransitive :A1}).
+{:A11 skos:broaderTransitive :B1} :dataFact ({:A11 skos:broaderTransitive :A1}).
 
 
 
@@ -23,7 +23,7 @@ eye --nope proof2.n3 proof-parser-rule.n3 --query proof-parser-query.n3q >result
 
 
 #query3 is querying an inferred statement, and result33.n3 shows the queried statement is deduced with the given data facts and rule.
-#note: the statement below should be avoided: {:A11 skos:broadTransitive :B1} :dataFact ({:A11 skos:broadTransitive :A1}).
+#note: the statement below should be avoided: {:A11 skos:broaderTransitive :B1} :dataFact ({:A11 skos:broaderTransitive :A1}).
 
 eye test.n3 --query query3.n3q>proof3.n3
 eye --nope proof3.n3 proof-parser-rule.n3 --query proof-parser-query.n3q >result33.n3
@@ -36,10 +36,10 @@ eye --nope result33_temp.n3 --query proof-parser-query.n3q >result33-2.n3
 
 
 #debug
-#use find all in rules, result contains unexpected statement:{:A11 skos:broadTransitive :B1} :dataFact ({:A11 skos:broadTransitive :A1}).
+#use find all in rules, result contains unexpected statement:{:A11 skos:broaderTransitive :B1} :dataFact ({:A11 skos:broaderTransitive :A1}).
 eye --nope proof3.n3 proof-parser-rule-debug.n3 --query proof-parser-query-debug.n3q >result33-debug.n3
 
-#break the proof-parser-rule-debug.n3 rule into two rules, result still contains unexpected statement:{:A11 skos:broadTransitive :B1} :dataFact ({:A11 skos:broadTransitive :A1}).
+#break the proof-parser-rule-debug.n3 rule into two rules, result still contains unexpected statement:{:A11 skos:broaderTransitive :B1} :dataFact ({:A11 skos:broaderTransitive :A1}).
 eye --nope proof3.n3 proof-parser-rule.n3 proof-parser-rule-debug-2.n3 --query proof-parser-query-debug.n3q >result33-debug.n3
 
 #It was a mistake, the rules stated in proof-parser-rule.n3 is also stated in proof-parser-rule-debug.n3, 

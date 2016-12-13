@@ -25,14 +25,14 @@ _:bn_5 a r:Parsing.
 <file:///d:/users/axifx/documents/github/terminologymapping/case1/proof3.n3#lemma8> a r:Extraction.
 _:bn_6 a r:Parsing.
 _:bn_1 r:component <file:///d:/users/axifx/documents/github/terminologymapping/case1/proof3.n3#lemma1>.
-_:bn_1 r:gives {:A11 skos:broadTransitive :B1}.
-<file:///d:/users/axifx/documents/github/terminologymapping/case1/proof3.n3#lemma1> r:gives {:A11 skos:broadTransitive :B1}.
-<file:///d:/users/axifx/documents/github/terminologymapping/case1/proof3.n3#lemma2> r:gives {:A11 skos:broadTransitive :B1}.
-<file:///d:/users/axifx/documents/github/terminologymapping/case1/proof3.n3#lemma3> r:gives {{:A11 skos:broadTransitive :B1} => {:A11 skos:broadTransitive :B1}}.
-<file:///d:/users/axifx/documents/github/terminologymapping/case1/proof3.n3#lemma4> r:gives {:A11 skos:broadTransitive :A1}.
-<file:///d:/users/axifx/documents/github/terminologymapping/case1/proof3.n3#lemma5> r:gives {:A1 skos:broadTransitive :B1}.
-<file:///d:/users/axifx/documents/github/terminologymapping/case1/proof3.n3#lemma7> r:gives {:A1 skos:broadTransitive :B11}.
-<file:///d:/users/axifx/documents/github/terminologymapping/case1/proof3.n3#lemma8> r:gives {:B11 skos:broadTransitive :B1}.
+_:bn_1 r:gives {:A11 skos:broaderTransitive :B1}.
+<file:///d:/users/axifx/documents/github/terminologymapping/case1/proof3.n3#lemma1> r:gives {:A11 skos:broaderTransitive :B1}.
+<file:///d:/users/axifx/documents/github/terminologymapping/case1/proof3.n3#lemma2> r:gives {:A11 skos:broaderTransitive :B1}.
+<file:///d:/users/axifx/documents/github/terminologymapping/case1/proof3.n3#lemma3> r:gives {{:A11 skos:broaderTransitive :B1} => {:A11 skos:broaderTransitive :B1}}.
+<file:///d:/users/axifx/documents/github/terminologymapping/case1/proof3.n3#lemma4> r:gives {:A11 skos:broaderTransitive :A1}.
+<file:///d:/users/axifx/documents/github/terminologymapping/case1/proof3.n3#lemma5> r:gives {:A1 skos:broaderTransitive :B1}.
+<file:///d:/users/axifx/documents/github/terminologymapping/case1/proof3.n3#lemma7> r:gives {:A1 skos:broaderTransitive :B11}.
+<file:///d:/users/axifx/documents/github/terminologymapping/case1/proof3.n3#lemma8> r:gives {:B11 skos:broaderTransitive :B1}.
 <file:///d:/users/axifx/documents/github/terminologymapping/case1/proof3.n3#lemma1> r:evidence (<file:///d:/users/axifx/documents/github/terminologymapping/case1/proof3.n3#lemma2>).
 <file:///d:/users/axifx/documents/github/terminologymapping/case1/proof3.n3#lemma2> r:evidence (<file:///d:/users/axifx/documents/github/terminologymapping/case1/proof3.n3#lemma4> <file:///d:/users/axifx/documents/github/terminologymapping/case1/proof3.n3#lemma5>).
 <file:///d:/users/axifx/documents/github/terminologymapping/case1/proof3.n3#lemma5> r:evidence (<file:///d:/users/axifx/documents/github/terminologymapping/case1/proof3.n3#lemma7> <file:///d:/users/axifx/documents/github/terminologymapping/case1/proof3.n3#lemma8>).
@@ -49,25 +49,25 @@ _:bn_3 r:source <file:///d:/users/axifx/documents/github/terminologymapping/case
 _:bn_4 r:source <file:///d:/users/axifx/documents/github/terminologymapping/case1/test.n3>.
 _:bn_5 r:source <file:///d:/users/axifx/documents/github/terminologymapping/case1/test.n3>.
 _:bn_6 r:source <file:///d:/users/axifx/documents/github/terminologymapping/case1/test.n3>.
-<file:///d:/users/axifx/documents/github/terminologymapping/case1/proof3.n3#lemma4> :fact {:A11 skos:broadTransitive :A1}.
-<file:///d:/users/axifx/documents/github/terminologymapping/case1/proof3.n3#lemma6> :fact {{_:sk_0 skos:broadTransitive _:sk_1.
-    _:sk_1 skos:broadTransitive _:sk_2} => {_:sk_0 skos:broadTransitive _:sk_2}}.
-<file:///d:/users/axifx/documents/github/terminologymapping/case1/proof3.n3#lemma7> :fact {:A1 skos:broadTransitive :B11}.
-<file:///d:/users/axifx/documents/github/terminologymapping/case1/proof3.n3#lemma8> :fact {:B11 skos:broadTransitive :B1}.
-<file:///d:/users/axifx/documents/github/terminologymapping/case1/proof3.n3#lemma2> :ruleFact {{_:sk_0 skos:broadTransitive _:sk_1.
-    _:sk_1 skos:broadTransitive _:sk_2} => {_:sk_0 skos:broadTransitive _:sk_2}}.
-<file:///d:/users/axifx/documents/github/terminologymapping/case1/proof3.n3#lemma5> :ruleFact {{_:sk_0 skos:broadTransitive _:sk_1.
-    _:sk_1 skos:broadTransitive _:sk_2} => {_:sk_0 skos:broadTransitive _:sk_2}}.
-<file:///d:/users/axifx/documents/github/terminologymapping/case1/proof3.n3#lemma1> :ruleFact {{_:sk_0 skos:broadTransitive _:sk_1.
-    _:sk_1 skos:broadTransitive _:sk_2} => {_:sk_0 skos:broadTransitive _:sk_2}}.
-<file:///d:/users/axifx/documents/github/terminologymapping/case1/proof3.n3#lemma2> :dataFact {:A11 skos:broadTransitive :A1}.
-<file:///d:/users/axifx/documents/github/terminologymapping/case1/proof3.n3#lemma5> :dataFact {:A1 skos:broadTransitive :B11}.
-<file:///d:/users/axifx/documents/github/terminologymapping/case1/proof3.n3#lemma5> :dataFact {:B11 skos:broadTransitive :B1}.
-<file:///d:/users/axifx/documents/github/terminologymapping/case1/proof3.n3#lemma1> :dataFact {:A11 skos:broadTransitive :A1}.
-<file:///d:/users/axifx/documents/github/terminologymapping/case1/proof3.n3#lemma2> :dataFact {:A1 skos:broadTransitive :B11}.
-<file:///d:/users/axifx/documents/github/terminologymapping/case1/proof3.n3#lemma2> :dataFact {:B11 skos:broadTransitive :B1}.
-<file:///d:/users/axifx/documents/github/terminologymapping/case1/proof3.n3#lemma1> :dataFact {:A1 skos:broadTransitive :B11}.
-<file:///d:/users/axifx/documents/github/terminologymapping/case1/proof3.n3#lemma1> :dataFact {:B11 skos:broadTransitive :B1}.
+<file:///d:/users/axifx/documents/github/terminologymapping/case1/proof3.n3#lemma4> :fact {:A11 skos:broaderTransitive :A1}.
+<file:///d:/users/axifx/documents/github/terminologymapping/case1/proof3.n3#lemma6> :fact {{_:sk_0 skos:broaderTransitive _:sk_1.
+    _:sk_1 skos:broaderTransitive _:sk_2} => {_:sk_0 skos:broaderTransitive _:sk_2}}.
+<file:///d:/users/axifx/documents/github/terminologymapping/case1/proof3.n3#lemma7> :fact {:A1 skos:broaderTransitive :B11}.
+<file:///d:/users/axifx/documents/github/terminologymapping/case1/proof3.n3#lemma8> :fact {:B11 skos:broaderTransitive :B1}.
+<file:///d:/users/axifx/documents/github/terminologymapping/case1/proof3.n3#lemma2> :ruleFact {{_:sk_0 skos:broaderTransitive _:sk_1.
+    _:sk_1 skos:broaderTransitive _:sk_2} => {_:sk_0 skos:broaderTransitive _:sk_2}}.
+<file:///d:/users/axifx/documents/github/terminologymapping/case1/proof3.n3#lemma5> :ruleFact {{_:sk_0 skos:broaderTransitive _:sk_1.
+    _:sk_1 skos:broaderTransitive _:sk_2} => {_:sk_0 skos:broaderTransitive _:sk_2}}.
+<file:///d:/users/axifx/documents/github/terminologymapping/case1/proof3.n3#lemma1> :ruleFact {{_:sk_0 skos:broaderTransitive _:sk_1.
+    _:sk_1 skos:broaderTransitive _:sk_2} => {_:sk_0 skos:broaderTransitive _:sk_2}}.
+<file:///d:/users/axifx/documents/github/terminologymapping/case1/proof3.n3#lemma2> :dataFact {:A11 skos:broaderTransitive :A1}.
+<file:///d:/users/axifx/documents/github/terminologymapping/case1/proof3.n3#lemma5> :dataFact {:A1 skos:broaderTransitive :B11}.
+<file:///d:/users/axifx/documents/github/terminologymapping/case1/proof3.n3#lemma5> :dataFact {:B11 skos:broaderTransitive :B1}.
+<file:///d:/users/axifx/documents/github/terminologymapping/case1/proof3.n3#lemma1> :dataFact {:A11 skos:broaderTransitive :A1}.
+<file:///d:/users/axifx/documents/github/terminologymapping/case1/proof3.n3#lemma2> :dataFact {:A1 skos:broaderTransitive :B11}.
+<file:///d:/users/axifx/documents/github/terminologymapping/case1/proof3.n3#lemma2> :dataFact {:B11 skos:broaderTransitive :B1}.
+<file:///d:/users/axifx/documents/github/terminologymapping/case1/proof3.n3#lemma1> :dataFact {:A1 skos:broaderTransitive :B11}.
+<file:///d:/users/axifx/documents/github/terminologymapping/case1/proof3.n3#lemma1> :dataFact {:B11 skos:broaderTransitive :B1}.
 
 #2016-12-13T14:14:58.150Z in=46 out=55 ent=15 step=46 brake=5 inf=100373 sec=0.078 inf/sec=1286833
 #ENDS

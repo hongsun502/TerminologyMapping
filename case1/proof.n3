@@ -13,17 +13,17 @@ PREFIX r: <http://www.w3.org/2000/10/swap/reason#>
   r:component <#lemma5>;
   r:component <#lemma6>;
   r:gives {
-    :A11 skos:broadTransitive :A1.
-    :A1 skos:broadTransitive :B11.
-    :B11 skos:broadTransitive :B1.
-    :A11 skos:broadTransitive :B11.
-    :A1 skos:broadTransitive :B1.
-    :A11 skos:broadTransitive :B1.
+    :A11 skos:broaderTransitive :A1.
+    :A1 skos:broaderTransitive :B11.
+    :B11 skos:broaderTransitive :B1.
+    :A11 skos:broaderTransitive :B11.
+    :A1 skos:broaderTransitive :B1.
+    :A11 skos:broaderTransitive :B1.
   }.
 
 <#lemma1> a r:Inference; 
   r:gives {
-    :A11 skos:broadTransitive :A1.
+    :A11 skos:broaderTransitive :A1.
   }; 
   r:evidence (
     <#lemma7>
@@ -32,7 +32,7 @@ PREFIX r: <http://www.w3.org/2000/10/swap/reason#>
 
 <#lemma2> a r:Inference; 
   r:gives {
-    :A1 skos:broadTransitive :B11.
+    :A1 skos:broaderTransitive :B11.
   }; 
   r:evidence (
     <#lemma9>
@@ -41,7 +41,7 @@ PREFIX r: <http://www.w3.org/2000/10/swap/reason#>
 
 <#lemma3> a r:Inference; 
   r:gives {
-    :B11 skos:broadTransitive :B1.
+    :B11 skos:broaderTransitive :B1.
   }; 
   r:evidence (
     <#lemma10>
@@ -50,7 +50,7 @@ PREFIX r: <http://www.w3.org/2000/10/swap/reason#>
 
 <#lemma4> a r:Inference; 
   r:gives {
-    :A11 skos:broadTransitive :B11.
+    :A11 skos:broaderTransitive :B11.
   }; 
   r:evidence (
     <#lemma11>
@@ -59,7 +59,7 @@ PREFIX r: <http://www.w3.org/2000/10/swap/reason#>
 
 <#lemma5> a r:Inference; 
   r:gives {
-    :A1 skos:broadTransitive :B1.
+    :A1 skos:broaderTransitive :B1.
   }; 
   r:evidence (
     <#lemma12>
@@ -68,7 +68,7 @@ PREFIX r: <http://www.w3.org/2000/10/swap/reason#>
 
 <#lemma6> a r:Inference; 
   r:gives {
-    :A11 skos:broadTransitive :B1.
+    :A11 skos:broaderTransitive :B1.
   }; 
   r:evidence (
     <#lemma13>
@@ -77,31 +77,31 @@ PREFIX r: <http://www.w3.org/2000/10/swap/reason#>
 
 <#lemma7> a r:Extraction; 
   r:gives {
-    :A11 skos:broadTransitive :A1.
+    :A11 skos:broaderTransitive :A1.
   };
   r:because [ a r:Parsing; r:source <file:///c:/users/hong/documents/terminology%20mapping/terminology%20test/test.n3>].
 
 <#lemma8> a r:Extraction; 
   r:gives {
-    {?x_0_1 skos:broadTransitive ?x_1_1} => {?x_0_1 skos:broadTransitive ?x_1_1}.
+    {?x_0_1 skos:broaderTransitive ?x_1_1} => {?x_0_1 skos:broaderTransitive ?x_1_1}.
   };
   r:because [ a r:Parsing; r:source <file:///c:/users/hong/documents/terminology%20mapping/terminology%20test/query.n3q>].
 
 <#lemma9> a r:Extraction; 
   r:gives {
-    :A1 skos:broadTransitive :B11.
+    :A1 skos:broaderTransitive :B11.
   };
   r:because [ a r:Parsing; r:source <file:///c:/users/hong/documents/terminology%20mapping/terminology%20test/test.n3>].
 
 <#lemma10> a r:Extraction; 
   r:gives {
-    :B11 skos:broadTransitive :B1.
+    :B11 skos:broaderTransitive :B1.
   };
   r:because [ a r:Parsing; r:source <file:///c:/users/hong/documents/terminology%20mapping/terminology%20test/test.n3>].
 
 <#lemma11> a r:Inference; 
   r:gives {
-    :A11 skos:broadTransitive :B11.
+    :A11 skos:broaderTransitive :B11.
   }; 
   r:evidence (
     <#lemma7>
@@ -111,7 +111,7 @@ PREFIX r: <http://www.w3.org/2000/10/swap/reason#>
 
 <#lemma12> a r:Inference; 
   r:gives {
-    :A1 skos:broadTransitive :B1.
+    :A1 skos:broaderTransitive :B1.
   }; 
   r:evidence (
     <#lemma9>
@@ -121,7 +121,7 @@ PREFIX r: <http://www.w3.org/2000/10/swap/reason#>
 
 <#lemma13> a r:Inference; 
   r:gives {
-    :A11 skos:broadTransitive :B1.
+    :A11 skos:broaderTransitive :B1.
   }; 
   r:evidence (
     <#lemma7>
@@ -131,8 +131,8 @@ PREFIX r: <http://www.w3.org/2000/10/swap/reason#>
 
 <#lemma14> a r:Extraction; 
   r:gives {
-    {?x_0_2 skos:broadTransitive ?x_1_2.
-      ?x_1_2 skos:broadTransitive ?x_2_2} => {?x_0_2 skos:broadTransitive ?x_2_2}.
+    {?x_0_2 skos:broaderTransitive ?x_1_2.
+      ?x_1_2 skos:broaderTransitive ?x_2_2} => {?x_0_2 skos:broaderTransitive ?x_2_2}.
   };
   r:because [ a r:Parsing; r:source <file:///c:/users/hong/documents/terminology%20mapping/terminology%20test/test.n3>].
 

@@ -9,9 +9,9 @@ PREFIX e: <http://eulersharp.sourceforge.net/2003/03swap/log-rules#>
 PREFIX string: <http://www.w3.org/2000/10/swap/string#>
 PREFIX log: <http://www.w3.org/2000/10/swap/log#>
 
-{:A11 skos:broadTransitive :B1} :ruleFact ({{_:e_sk_0_1 skos:broadTransitive _:e_sk_1_1.
-    _:e_sk_1_1 skos:broadTransitive _:e_sk_2_1} => {_:e_sk_0_1 skos:broadTransitive _:e_sk_2_1}}).
-{:A11 skos:broadTransitive :B1} :dataFact ({:A11 skos:broadTransitive :A1} {:A1 skos:broadTransitive :B11} {:B11 skos:broadTransitive :B1}).
+{:A11 skos:broaderTransitive :B1} :ruleFact ({{_:e_sk_0_1 skos:broaderTransitive _:e_sk_1_1.
+    _:e_sk_1_1 skos:broaderTransitive _:e_sk_2_1} => {_:e_sk_0_1 skos:broaderTransitive _:e_sk_2_1}}).
+{:A11 skos:broaderTransitive :B1} :dataFact ({:A11 skos:broaderTransitive :A1} {:A1 skos:broaderTransitive :B11} {:B11 skos:broaderTransitive :B1}).
 
 #2016-12-13T14:15:02.749Z in=57 out=2 ent=2 step=2 brake=2 inf=104542 sec=0.078 inf/sec=1340282
 #ENDS
