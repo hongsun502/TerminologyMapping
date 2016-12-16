@@ -1,0 +1,38 @@
+#Processed by EYE v16.1209.1430 beta josd
+#eye data.ttl rule.n3 --query query2.n3q
+
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX skos-ex: <http://www.agfa.org/skos/extension#>
+PREFIX : <http://www.terminology.org#>
+PREFIX r: <http://www.w3.org/2000/10/swap/reason#>
+
+[] a r:Proof, r:Conjunction;
+  r:component <#lemma1>;
+  r:gives {
+    :C11 skos-ex:implies :C1.
+  }.
+
+<#lemma1> a r:Inference; 
+  r:gives {
+    :C11 skos-ex:implies :C1.
+  }; 
+  r:evidence (
+    <#lemma2>
+  );
+  r:rule <#lemma3>.
+
+<#lemma2> a r:Extraction; 
+  r:gives {
+    :C11 skos-ex:implies :C1.
+  };
+  r:because [ a r:Parsing; r:source <file:///d:/users/axifx/documents/github/terminologymapping/mockup/data.ttl>].
+
+<#lemma3> a r:Extraction; 
+  r:gives {
+    {:C11 skos-ex:implies :C1} => {:C11 skos-ex:implies :C1}.
+  };
+  r:because [ a r:Parsing; r:source <file:///d:/users/axifx/documents/github/terminologymapping/mockup/query2.n3q>].
+
+#2016-12-16T10:19:36.895Z in=10 out=1 ent=17 step=95 brake=3 inf=38699 sec=0.046 inf/sec=841283
+#ENDS
+

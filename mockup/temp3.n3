@@ -1,0 +1,109 @@
+#Processed by EYE v16.1209.1430 beta josd
+#eye --nope proof3.n3 proof-parser-rule.n3 --pass
+
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX skos-ex: <http://www.agfa.org/skos/extension#>
+PREFIX : <http://www.terminology.org#>
+PREFIX r: <http://www.w3.org/2000/10/swap/reason#>
+PREFIX list: <http://www.w3.org/2000/10/swap/list#>
+PREFIX e: <http://eulersharp.sourceforge.net/2003/03swap/log-rules#>
+PREFIX string: <http://www.w3.org/2000/10/swap/string#>
+PREFIX log: <http://www.w3.org/2000/10/swap/log#>
+
+_:bn_1 a r:Proof.
+_:bn_1 a r:Conjunction.
+<file:///d:/users/axifx/documents/github/terminologymapping/mockup/proof3.n3#lemma1> a r:Inference.
+<file:///d:/users/axifx/documents/github/terminologymapping/mockup/proof3.n3#lemma2> a r:Inference.
+<file:///d:/users/axifx/documents/github/terminologymapping/mockup/proof3.n3#lemma3> a r:Extraction.
+_:bn_2 a r:Parsing.
+<file:///d:/users/axifx/documents/github/terminologymapping/mockup/proof3.n3#lemma4> a r:Inference.
+<file:///d:/users/axifx/documents/github/terminologymapping/mockup/proof3.n3#lemma5> a r:Inference.
+<file:///d:/users/axifx/documents/github/terminologymapping/mockup/proof3.n3#lemma6> a r:Extraction.
+_:bn_3 a r:Parsing.
+<file:///d:/users/axifx/documents/github/terminologymapping/mockup/proof3.n3#lemma7> a r:Extraction.
+_:bn_4 a r:Parsing.
+<file:///d:/users/axifx/documents/github/terminologymapping/mockup/proof3.n3#lemma8> a r:Extraction.
+_:bn_5 a r:Parsing.
+<file:///d:/users/axifx/documents/github/terminologymapping/mockup/proof3.n3#lemma9> a r:Inference.
+<file:///d:/users/axifx/documents/github/terminologymapping/mockup/proof3.n3#lemma10> a r:Inference.
+<file:///d:/users/axifx/documents/github/terminologymapping/mockup/proof3.n3#lemma11> a r:Extraction.
+_:bn_6 a r:Parsing.
+<file:///d:/users/axifx/documents/github/terminologymapping/mockup/proof3.n3#lemma12> a r:Extraction.
+_:bn_7 a r:Parsing.
+<file:///d:/users/axifx/documents/github/terminologymapping/mockup/proof3.n3#lemma13> a r:Extraction.
+_:bn_8 a r:Parsing.
+_:bn_1 r:component <file:///d:/users/axifx/documents/github/terminologymapping/mockup/proof3.n3#lemma1>.
+_:bn_1 r:gives {:A11 skos-ex:implies :B1}.
+<file:///d:/users/axifx/documents/github/terminologymapping/mockup/proof3.n3#lemma1> r:gives {:A11 skos-ex:implies :B1}.
+<file:///d:/users/axifx/documents/github/terminologymapping/mockup/proof3.n3#lemma2> r:gives {:A11 skos-ex:implies :B1}.
+<file:///d:/users/axifx/documents/github/terminologymapping/mockup/proof3.n3#lemma3> r:gives {{:A11 skos-ex:implies :B1} => {:A11 skos-ex:implies :B1}}.
+<file:///d:/users/axifx/documents/github/terminologymapping/mockup/proof3.n3#lemma4> r:gives {:A11 skos-ex:implies :A1}.
+<file:///d:/users/axifx/documents/github/terminologymapping/mockup/proof3.n3#lemma5> r:gives {:A1 skos-ex:implies :B1}.
+<file:///d:/users/axifx/documents/github/terminologymapping/mockup/proof3.n3#lemma7> r:gives {:A11 skos:broader :A1}.
+<file:///d:/users/axifx/documents/github/terminologymapping/mockup/proof3.n3#lemma9> r:gives {:A1 skos-ex:implies :B11}.
+<file:///d:/users/axifx/documents/github/terminologymapping/mockup/proof3.n3#lemma10> r:gives {:B11 skos-ex:implies :B1}.
+<file:///d:/users/axifx/documents/github/terminologymapping/mockup/proof3.n3#lemma11> r:gives {:A1 skos:broadMatch :B11}.
+<file:///d:/users/axifx/documents/github/terminologymapping/mockup/proof3.n3#lemma13> r:gives {:B11 skos:broader :B1}.
+<file:///d:/users/axifx/documents/github/terminologymapping/mockup/proof3.n3#lemma1> r:evidence (<file:///d:/users/axifx/documents/github/terminologymapping/mockup/proof3.n3#lemma2>).
+<file:///d:/users/axifx/documents/github/terminologymapping/mockup/proof3.n3#lemma2> r:evidence (<file:///d:/users/axifx/documents/github/terminologymapping/mockup/proof3.n3#lemma4> <file:///d:/users/axifx/documents/github/terminologymapping/mockup/proof3.n3#lemma5>).
+<file:///d:/users/axifx/documents/github/terminologymapping/mockup/proof3.n3#lemma4> r:evidence (<file:///d:/users/axifx/documents/github/terminologymapping/mockup/proof3.n3#lemma7>).
+<file:///d:/users/axifx/documents/github/terminologymapping/mockup/proof3.n3#lemma5> r:evidence (<file:///d:/users/axifx/documents/github/terminologymapping/mockup/proof3.n3#lemma9> <file:///d:/users/axifx/documents/github/terminologymapping/mockup/proof3.n3#lemma10>).
+<file:///d:/users/axifx/documents/github/terminologymapping/mockup/proof3.n3#lemma9> r:evidence (<file:///d:/users/axifx/documents/github/terminologymapping/mockup/proof3.n3#lemma11>).
+<file:///d:/users/axifx/documents/github/terminologymapping/mockup/proof3.n3#lemma10> r:evidence (<file:///d:/users/axifx/documents/github/terminologymapping/mockup/proof3.n3#lemma13>).
+<file:///d:/users/axifx/documents/github/terminologymapping/mockup/proof3.n3#lemma1> r:rule <file:///d:/users/axifx/documents/github/terminologymapping/mockup/proof3.n3#lemma3>.
+<file:///d:/users/axifx/documents/github/terminologymapping/mockup/proof3.n3#lemma2> r:rule <file:///d:/users/axifx/documents/github/terminologymapping/mockup/proof3.n3#lemma6>.
+<file:///d:/users/axifx/documents/github/terminologymapping/mockup/proof3.n3#lemma4> r:rule <file:///d:/users/axifx/documents/github/terminologymapping/mockup/proof3.n3#lemma8>.
+<file:///d:/users/axifx/documents/github/terminologymapping/mockup/proof3.n3#lemma5> r:rule <file:///d:/users/axifx/documents/github/terminologymapping/mockup/proof3.n3#lemma6>.
+<file:///d:/users/axifx/documents/github/terminologymapping/mockup/proof3.n3#lemma9> r:rule <file:///d:/users/axifx/documents/github/terminologymapping/mockup/proof3.n3#lemma12>.
+<file:///d:/users/axifx/documents/github/terminologymapping/mockup/proof3.n3#lemma10> r:rule <file:///d:/users/axifx/documents/github/terminologymapping/mockup/proof3.n3#lemma8>.
+<file:///d:/users/axifx/documents/github/terminologymapping/mockup/proof3.n3#lemma3> r:because _:bn_2.
+<file:///d:/users/axifx/documents/github/terminologymapping/mockup/proof3.n3#lemma6> r:because _:bn_3.
+<file:///d:/users/axifx/documents/github/terminologymapping/mockup/proof3.n3#lemma7> r:because _:bn_4.
+<file:///d:/users/axifx/documents/github/terminologymapping/mockup/proof3.n3#lemma8> r:because _:bn_5.
+<file:///d:/users/axifx/documents/github/terminologymapping/mockup/proof3.n3#lemma11> r:because _:bn_6.
+<file:///d:/users/axifx/documents/github/terminologymapping/mockup/proof3.n3#lemma12> r:because _:bn_7.
+<file:///d:/users/axifx/documents/github/terminologymapping/mockup/proof3.n3#lemma13> r:because _:bn_8.
+_:bn_2 r:source <file:///d:/users/axifx/documents/github/terminologymapping/mockup/query3.n3q>.
+_:bn_3 r:source <file:///d:/users/axifx/documents/github/terminologymapping/mockup/rule.n3>.
+_:bn_4 r:source <file:///d:/users/axifx/documents/github/terminologymapping/mockup/data.ttl>.
+_:bn_5 r:source <file:///d:/users/axifx/documents/github/terminologymapping/mockup/rule.n3>.
+_:bn_6 r:source <file:///d:/users/axifx/documents/github/terminologymapping/mockup/data.ttl>.
+_:bn_7 r:source <file:///d:/users/axifx/documents/github/terminologymapping/mockup/rule.n3>.
+_:bn_8 r:source <file:///d:/users/axifx/documents/github/terminologymapping/mockup/data.ttl>.
+<file:///d:/users/axifx/documents/github/terminologymapping/mockup/proof3.n3#lemma6> :fact {{_:sk_0 skos-ex:implies _:sk_1.
+    _:sk_1 skos-ex:implies _:sk_2} => {_:sk_0 skos-ex:implies _:sk_2}}.
+<file:///d:/users/axifx/documents/github/terminologymapping/mockup/proof3.n3#lemma7> :fact {:A11 skos:broader :A1}.
+<file:///d:/users/axifx/documents/github/terminologymapping/mockup/proof3.n3#lemma8> :fact {{_:sk_6 skos:broader _:sk_7} => {_:sk_6 skos-ex:implies _:sk_7}}.
+<file:///d:/users/axifx/documents/github/terminologymapping/mockup/proof3.n3#lemma11> :fact {:A1 skos:broadMatch :B11}.
+<file:///d:/users/axifx/documents/github/terminologymapping/mockup/proof3.n3#lemma12> :fact {{_:sk_10 skos:broadMatch _:sk_11} => {_:sk_10 skos-ex:implies _:sk_11}}.
+<file:///d:/users/axifx/documents/github/terminologymapping/mockup/proof3.n3#lemma13> :fact {:B11 skos:broader :B1}.
+<file:///d:/users/axifx/documents/github/terminologymapping/mockup/proof3.n3#lemma2> :ruleFact {{_:sk_0 skos-ex:implies _:sk_1.
+    _:sk_1 skos-ex:implies _:sk_2} => {_:sk_0 skos-ex:implies _:sk_2}}.
+<file:///d:/users/axifx/documents/github/terminologymapping/mockup/proof3.n3#lemma4> :ruleFact {{_:sk_6 skos:broader _:sk_7} => {_:sk_6 skos-ex:implies _:sk_7}}.
+<file:///d:/users/axifx/documents/github/terminologymapping/mockup/proof3.n3#lemma5> :ruleFact {{_:sk_0 skos-ex:implies _:sk_1.
+    _:sk_1 skos-ex:implies _:sk_2} => {_:sk_0 skos-ex:implies _:sk_2}}.
+<file:///d:/users/axifx/documents/github/terminologymapping/mockup/proof3.n3#lemma9> :ruleFact {{_:sk_10 skos:broadMatch _:sk_11} => {_:sk_10 skos-ex:implies _:sk_11}}.
+<file:///d:/users/axifx/documents/github/terminologymapping/mockup/proof3.n3#lemma10> :ruleFact {{_:sk_6 skos:broader _:sk_7} => {_:sk_6 skos-ex:implies _:sk_7}}.
+<file:///d:/users/axifx/documents/github/terminologymapping/mockup/proof3.n3#lemma1> :ruleFact {{_:sk_0 skos-ex:implies _:sk_1.
+    _:sk_1 skos-ex:implies _:sk_2} => {_:sk_0 skos-ex:implies _:sk_2}}.
+<file:///d:/users/axifx/documents/github/terminologymapping/mockup/proof3.n3#lemma2> :ruleFact {{_:sk_6 skos:broader _:sk_7} => {_:sk_6 skos-ex:implies _:sk_7}}.
+<file:///d:/users/axifx/documents/github/terminologymapping/mockup/proof3.n3#lemma5> :ruleFact {{_:sk_10 skos:broadMatch _:sk_11} => {_:sk_10 skos-ex:implies _:sk_11}}.
+<file:///d:/users/axifx/documents/github/terminologymapping/mockup/proof3.n3#lemma5> :ruleFact {{_:sk_6 skos:broader _:sk_7} => {_:sk_6 skos-ex:implies _:sk_7}}.
+<file:///d:/users/axifx/documents/github/terminologymapping/mockup/proof3.n3#lemma1> :ruleFact {{_:sk_6 skos:broader _:sk_7} => {_:sk_6 skos-ex:implies _:sk_7}}.
+<file:///d:/users/axifx/documents/github/terminologymapping/mockup/proof3.n3#lemma2> :ruleFact {{_:sk_10 skos:broadMatch _:sk_11} => {_:sk_10 skos-ex:implies _:sk_11}}.
+<file:///d:/users/axifx/documents/github/terminologymapping/mockup/proof3.n3#lemma1> :ruleFact {{_:sk_10 skos:broadMatch _:sk_11} => {_:sk_10 skos-ex:implies _:sk_11}}.
+<file:///d:/users/axifx/documents/github/terminologymapping/mockup/proof3.n3#lemma4> :dataFact {:A11 skos:broader :A1}.
+<file:///d:/users/axifx/documents/github/terminologymapping/mockup/proof3.n3#lemma9> :dataFact {:A1 skos:broadMatch :B11}.
+<file:///d:/users/axifx/documents/github/terminologymapping/mockup/proof3.n3#lemma10> :dataFact {:B11 skos:broader :B1}.
+<file:///d:/users/axifx/documents/github/terminologymapping/mockup/proof3.n3#lemma2> :dataFact {:A11 skos:broader :A1}.
+<file:///d:/users/axifx/documents/github/terminologymapping/mockup/proof3.n3#lemma5> :dataFact {:A1 skos:broadMatch :B11}.
+<file:///d:/users/axifx/documents/github/terminologymapping/mockup/proof3.n3#lemma5> :dataFact {:B11 skos:broader :B1}.
+<file:///d:/users/axifx/documents/github/terminologymapping/mockup/proof3.n3#lemma1> :dataFact {:A11 skos:broader :A1}.
+<file:///d:/users/axifx/documents/github/terminologymapping/mockup/proof3.n3#lemma2> :dataFact {:A1 skos:broadMatch :B11}.
+<file:///d:/users/axifx/documents/github/terminologymapping/mockup/proof3.n3#lemma2> :dataFact {:B11 skos:broader :B1}.
+<file:///d:/users/axifx/documents/github/terminologymapping/mockup/proof3.n3#lemma1> :dataFact {:A1 skos:broadMatch :B11}.
+<file:///d:/users/axifx/documents/github/terminologymapping/mockup/proof3.n3#lemma1> :dataFact {:B11 skos:broader :B1}.
+
+#2016-12-16T10:20:09.333Z in=68 out=89 ent=29 step=112 brake=6 inf=141516 sec=0.062 inf/sec=2282516
+#ENDS
+

@@ -1,0 +1,24 @@
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX : <http://www.terminology.org#>
+PREFIX r: <http://www.w3.org/2000/10/swap/reason#>
+PREFIX list: <http://www.w3.org/2000/10/swap/list#>
+PREFIX e: <http://eulersharp.sourceforge.net/2003/03swap/log-rules#>
+
+{ 
+	?proof a r:Proof.
+	?proof r:component ?lemma.
+	?lemma r:gives ?output.
+	?scope e:findall (?fact { ?lemma :ruleFact ?fact. } ?fact_list ) .
+} => {
+	?output :ruleFact ?fact_list.
+}. 
+
+
+{ 
+	?proof a r:Proof.
+	?proof r:component ?lemma.
+	?lemma r:gives ?output.
+	?scope e:findall (?fact { ?lemma :dataFact ?fact. } ?fact_list ) .	
+	} => {
+	?output :dataFact ?fact_list.
+}. 

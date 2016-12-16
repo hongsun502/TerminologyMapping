@@ -1,0 +1,116 @@
+#Processed by EYE v16.1209.1430 beta josd
+#eye data.ttl rule.n3 --query query3.n3q
+
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX skos-ex: <http://www.agfa.org/skos/extension#>
+PREFIX : <http://www.terminology.org#>
+PREFIX r: <http://www.w3.org/2000/10/swap/reason#>
+
+[] a r:Proof, r:Conjunction;
+  r:component <#lemma1>;
+  r:gives {
+    :A11 skos-ex:implies :B1.
+  }.
+
+<#lemma1> a r:Inference; 
+  r:gives {
+    :A11 skos-ex:implies :B1.
+  }; 
+  r:evidence (
+    <#lemma2>
+  );
+  r:rule <#lemma3>.
+
+<#lemma2> a r:Inference; 
+  r:gives {
+    :A11 skos-ex:implies :B1.
+  }; 
+  r:evidence (
+    <#lemma4>
+    <#lemma5>
+  );
+  r:rule <#lemma6>.
+
+<#lemma3> a r:Extraction; 
+  r:gives {
+    {:A11 skos-ex:implies :B1} => {:A11 skos-ex:implies :B1}.
+  };
+  r:because [ a r:Parsing; r:source <file:///d:/users/axifx/documents/github/terminologymapping/mockup/query3.n3q>].
+
+<#lemma4> a r:Inference; 
+  r:gives {
+    :A11 skos-ex:implies :A1.
+  }; 
+  r:evidence (
+    <#lemma7>
+  );
+  r:rule <#lemma8>.
+
+<#lemma5> a r:Inference; 
+  r:gives {
+    :A1 skos-ex:implies :B1.
+  }; 
+  r:evidence (
+    <#lemma9>
+    <#lemma10>
+  );
+  r:rule <#lemma6>.
+
+<#lemma6> a r:Extraction; 
+  r:gives {
+    {?x_0_2 skos-ex:implies ?x_1_2.
+      ?x_1_2 skos-ex:implies ?x_2_2} => {?x_0_2 skos-ex:implies ?x_2_2}.
+  };
+  r:because [ a r:Parsing; r:source <file:///d:/users/axifx/documents/github/terminologymapping/mockup/rule.n3>].
+
+<#lemma7> a r:Extraction; 
+  r:gives {
+    :A11 skos:broader :A1.
+  };
+  r:because [ a r:Parsing; r:source <file:///d:/users/axifx/documents/github/terminologymapping/mockup/data.ttl>].
+
+<#lemma8> a r:Extraction; 
+  r:gives {
+    {?x_0_3 skos:broader ?x_1_3} => {?x_0_3 skos-ex:implies ?x_1_3}.
+  };
+  r:because [ a r:Parsing; r:source <file:///d:/users/axifx/documents/github/terminologymapping/mockup/rule.n3>].
+
+<#lemma9> a r:Inference; 
+  r:gives {
+    :A1 skos-ex:implies :B11.
+  }; 
+  r:evidence (
+    <#lemma11>
+  );
+  r:rule <#lemma12>.
+
+<#lemma10> a r:Inference; 
+  r:gives {
+    :B11 skos-ex:implies :B1.
+  }; 
+  r:evidence (
+    <#lemma13>
+  );
+  r:rule <#lemma8>.
+
+<#lemma11> a r:Extraction; 
+  r:gives {
+    :A1 skos:broadMatch :B11.
+  };
+  r:because [ a r:Parsing; r:source <file:///d:/users/axifx/documents/github/terminologymapping/mockup/data.ttl>].
+
+<#lemma12> a r:Extraction; 
+  r:gives {
+    {?x_0_4 skos:broadMatch ?x_1_4} => {?x_0_4 skos-ex:implies ?x_1_4}.
+  };
+  r:because [ a r:Parsing; r:source <file:///d:/users/axifx/documents/github/terminologymapping/mockup/rule.n3>].
+
+<#lemma13> a r:Extraction; 
+  r:gives {
+    :B11 skos:broader :B1.
+  };
+  r:because [ a r:Parsing; r:source <file:///d:/users/axifx/documents/github/terminologymapping/mockup/data.ttl>].
+
+#2016-12-16T10:20:05.230Z in=10 out=1 ent=17 step=94 brake=3 inf=48126 sec=0.046 inf/sec=1046217
+#ENDS
+

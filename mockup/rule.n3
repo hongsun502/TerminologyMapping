@@ -1,0 +1,9 @@
+prefix skos-ex: <http://www.agfa.org/skos/extension#>
+prefix skos: <http://www.w3.org/2004/02/skos/core#>
+prefix : <http://www.terminology.org#>
+
+{ ?x skos:broader ?y. } => {  ?x skos-ex:implies ?y.}.
+{ ?x skos:broadMatch ?y. } => {  ?x skos-ex:implies ?y.}.
+{ ?x skos:exactMatch ?y. } => {  ?x skos-ex:implies ?y. ?y skos-ex:implies ?x.}.
+
+{ ?x skos-ex:implies ?y. ?y skos-ex:implies ?z. } => {  ?x skos-ex:implies ?z.}.

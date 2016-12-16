@@ -1,0 +1,11 @@
+prefix skos: <http://www.w3.org/2004/02/skos/core#>
+prefix skos-ex: <http://www.agfa.org/skos/extension#>
+prefix : <http://www.terminology.org#>
+
+:A11 skos:broader :A1.
+:A1 skos:broadMatch :B11.
+:B11 skos:broader :B1.
+
+:A1 skos:exactMatch :C1.
+
+:C11 skos-ex:implies :C1.

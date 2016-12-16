@@ -1,0 +1,23 @@
+#generate proof
+eye data.ttl rule.n3 --query query.n3q>proof.n3
+
+#parse proof, use pass to output the results to a temporary file.
+eye --nope proof.n3 proof-parser-rule.n3 --pass >temp.n3
+
+#query the temporary file to generate the rule fact and data fact.
+eye --nope temp.n3 --query proof-parser-query.n3q >result.n3
+
+
+
+
+#query2 is querying an existing statement, and result2.n3 shows the queried statement is an extracted fact, there is no rule needed.
+eye data.ttl rule.n3 --query query2.n3q>proof2.n3
+eye --nope proof2.n3 proof-parser-rule.n3 --pass >temp2.n3
+eye --nope temp2.n3 --query proof-parser-query.n3q >result2.n3
+
+
+#query3 is querying an inferred statement, and result3.n3 shows the queried statement is deduced with the given data facts and rule.
+eye data.ttl rule.n3 --query query3.n3q>proof3.n3
+eye --nope proof3.n3 proof-parser-rule.n3 --pass >temp3.n3
+eye --nope temp3.n3 --query proof-parser-query.n3q >result3.n3
+

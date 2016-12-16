@@ -1,0 +1,36 @@
+#Processed by EYE v16.1209.1430 beta josd
+#eye --nope proof2.n3 proof-parser-rule.n3 --pass
+
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX skos-ex: <http://www.agfa.org/skos/extension#>
+PREFIX : <http://www.terminology.org#>
+PREFIX r: <http://www.w3.org/2000/10/swap/reason#>
+PREFIX list: <http://www.w3.org/2000/10/swap/list#>
+PREFIX e: <http://eulersharp.sourceforge.net/2003/03swap/log-rules#>
+PREFIX string: <http://www.w3.org/2000/10/swap/string#>
+PREFIX log: <http://www.w3.org/2000/10/swap/log#>
+
+_:bn_1 a r:Proof.
+_:bn_1 a r:Conjunction.
+<file:///d:/users/axifx/documents/github/terminologymapping/mockup/proof2.n3#lemma1> a r:Inference.
+<file:///d:/users/axifx/documents/github/terminologymapping/mockup/proof2.n3#lemma2> a r:Extraction.
+_:bn_2 a r:Parsing.
+<file:///d:/users/axifx/documents/github/terminologymapping/mockup/proof2.n3#lemma3> a r:Extraction.
+_:bn_3 a r:Parsing.
+_:bn_1 r:component <file:///d:/users/axifx/documents/github/terminologymapping/mockup/proof2.n3#lemma1>.
+_:bn_1 r:gives {:C11 skos-ex:implies :C1}.
+<file:///d:/users/axifx/documents/github/terminologymapping/mockup/proof2.n3#lemma1> r:gives {:C11 skos-ex:implies :C1}.
+<file:///d:/users/axifx/documents/github/terminologymapping/mockup/proof2.n3#lemma2> r:gives {:C11 skos-ex:implies :C1}.
+<file:///d:/users/axifx/documents/github/terminologymapping/mockup/proof2.n3#lemma3> r:gives {{:C11 skos-ex:implies :C1} => {:C11 skos-ex:implies :C1}}.
+<file:///d:/users/axifx/documents/github/terminologymapping/mockup/proof2.n3#lemma1> r:evidence (<file:///d:/users/axifx/documents/github/terminologymapping/mockup/proof2.n3#lemma2>).
+<file:///d:/users/axifx/documents/github/terminologymapping/mockup/proof2.n3#lemma1> r:rule <file:///d:/users/axifx/documents/github/terminologymapping/mockup/proof2.n3#lemma3>.
+<file:///d:/users/axifx/documents/github/terminologymapping/mockup/proof2.n3#lemma2> r:because _:bn_2.
+<file:///d:/users/axifx/documents/github/terminologymapping/mockup/proof2.n3#lemma3> r:because _:bn_3.
+_:bn_2 r:source <file:///d:/users/axifx/documents/github/terminologymapping/mockup/data.ttl>.
+_:bn_3 r:source <file:///d:/users/axifx/documents/github/terminologymapping/mockup/query2.n3q>.
+<file:///d:/users/axifx/documents/github/terminologymapping/mockup/proof2.n3#lemma2> :fact {:C11 skos-ex:implies :C1}.
+<file:///d:/users/axifx/documents/github/terminologymapping/mockup/proof2.n3#lemma1> :dataFact {:C11 skos-ex:implies :C1}.
+
+#2016-12-16T10:19:42.059Z in=23 out=20 ent=2 step=4 brake=4 inf=59376 sec=0.015 inf/sec=3958400
+#ENDS
+
