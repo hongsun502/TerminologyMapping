@@ -1,0 +1,20 @@
+prefix dce: <http://purl.org/dc/elements/1.1/>
+prefix skos: <http://www.w3.org/2004/02/skos/core#>
+prefix skos-ex: <http://eulersharp.sourceforge.net/2003/03swap/skos-mapping-extension#>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix : <http://www.terminology-mockup.org#>
+
+
+{?C rdfs:subClassOf ?D. ?D rdfs:subClassOf ?E} => {?C rdfs:subClassOf ?E}.
+	
+
+#Mapping relations entailed from non-SKOS hierarchical relation
+{ ?x rdfs:subClassOf ?y. } => {  ?x skos-ex:implies ?y. }.
+
+#Mapping relations entailed from non-SKOS mapping relation
+{ ?x :mapTo ?y. } => {  ?x skos-ex:implies ?y. }.
+
+
+#Define the mapping relation as transitive
+{ ?x skos-ex:implies ?y. ?y skos-ex:implies ?z. } => {  ?x skos-ex:implies ?z. }.
+		

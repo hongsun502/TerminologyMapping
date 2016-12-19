@@ -1,0 +1,58 @@
+#Processed by EYE v16.1209.1430 beta josd
+#eye --nope temp.n3 --query proof-parser-query.n3q
+
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX skos-ex: <http://eulersharp.sourceforge.net/2003/03swap/skos-mapping-extension#>
+PREFIX : <http://www.terminology-mockup.org#>
+PREFIX dce: <http://purl.org/dc/elements/1.1/>
+PREFIX r: <http://www.w3.org/2000/10/swap/reason#>
+PREFIX list: <http://www.w3.org/2000/10/swap/list#>
+PREFIX e: <http://eulersharp.sourceforge.net/2003/03swap/log-rules#>
+PREFIX string: <http://www.w3.org/2000/10/swap/string#>
+PREFIX log: <http://www.w3.org/2000/10/swap/log#>
+
+{:A11 skos-ex:implies :A1} :ruleFact ({{_:e_sk_0_1 skos:broader _:e_sk_1_1} => {_:e_sk_0_1 skos-ex:implies _:e_sk_1_1}}).
+{:B11 skos-ex:implies :B1} :ruleFact ({{_:e_sk_0_1 skos:broader _:e_sk_1_1} => {_:e_sk_0_1 skos-ex:implies _:e_sk_1_1}}).
+{:A1 skos-ex:implies :B11} :ruleFact ({{_:e_sk_4_1 skos:broadMatch _:e_sk_5_1} => {_:e_sk_4_1 skos-ex:implies _:e_sk_5_1}}).
+{:A1 skos-ex:implies :C1} :ruleFact ({{_:e_sk_8_1 skos:exactMatch _:e_sk_9_1} => {_:e_sk_8_1 skos-ex:implies _:e_sk_9_1.
+    _:e_sk_9_1 skos-ex:implies _:e_sk_8_1}}).
+{:C1 skos-ex:implies :A1} :ruleFact ({{_:e_sk_8_1 skos:exactMatch _:e_sk_9_1} => {_:e_sk_8_1 skos-ex:implies _:e_sk_9_1.
+    _:e_sk_9_1 skos-ex:implies _:e_sk_8_1}}).
+{:A11 skos-ex:implies :B11} :ruleFact ({{_:e_sk_12_1 skos-ex:implies _:e_sk_13_1.
+    _:e_sk_13_1 skos-ex:implies _:e_sk_14_1} => {_:e_sk_12_1 skos-ex:implies _:e_sk_14_1}} {{_:e_sk_0_1 skos:broader _:e_sk_1_1} => {_:e_sk_0_1 skos-ex:implies _:e_sk_1_1}} {{_:e_sk_4_1 skos:broadMatch _:e_sk_5_1} => {_:e_sk_4_1 skos-ex:implies _:e_sk_5_1}}).
+{:A11 skos-ex:implies :C1} :ruleFact ({{_:e_sk_12_1 skos-ex:implies _:e_sk_13_1.
+    _:e_sk_13_1 skos-ex:implies _:e_sk_14_1} => {_:e_sk_12_1 skos-ex:implies _:e_sk_14_1}} {{_:e_sk_0_1 skos:broader _:e_sk_1_1} => {_:e_sk_0_1 skos-ex:implies _:e_sk_1_1}} {{_:e_sk_8_1 skos:exactMatch _:e_sk_9_1} => {_:e_sk_8_1 skos-ex:implies _:e_sk_9_1.
+    _:e_sk_9_1 skos-ex:implies _:e_sk_8_1}}).
+{:A1 skos-ex:implies :B1} :ruleFact ({{_:e_sk_12_1 skos-ex:implies _:e_sk_13_1.
+    _:e_sk_13_1 skos-ex:implies _:e_sk_14_1} => {_:e_sk_12_1 skos-ex:implies _:e_sk_14_1}} {{_:e_sk_4_1 skos:broadMatch _:e_sk_5_1} => {_:e_sk_4_1 skos-ex:implies _:e_sk_5_1}} {{_:e_sk_0_1 skos:broader _:e_sk_1_1} => {_:e_sk_0_1 skos-ex:implies _:e_sk_1_1}}).
+{:A1 skos-ex:implies :A1} :ruleFact ({{_:e_sk_12_1 skos-ex:implies _:e_sk_13_1.
+    _:e_sk_13_1 skos-ex:implies _:e_sk_14_1} => {_:e_sk_12_1 skos-ex:implies _:e_sk_14_1}} {{_:e_sk_8_1 skos:exactMatch _:e_sk_9_1} => {_:e_sk_8_1 skos-ex:implies _:e_sk_9_1.
+    _:e_sk_9_1 skos-ex:implies _:e_sk_8_1}}).
+{:C1 skos-ex:implies :B11} :ruleFact ({{_:e_sk_12_1 skos-ex:implies _:e_sk_13_1.
+    _:e_sk_13_1 skos-ex:implies _:e_sk_14_1} => {_:e_sk_12_1 skos-ex:implies _:e_sk_14_1}} {{_:e_sk_8_1 skos:exactMatch _:e_sk_9_1} => {_:e_sk_8_1 skos-ex:implies _:e_sk_9_1.
+    _:e_sk_9_1 skos-ex:implies _:e_sk_8_1}} {{_:e_sk_4_1 skos:broadMatch _:e_sk_5_1} => {_:e_sk_4_1 skos-ex:implies _:e_sk_5_1}}).
+{:C1 skos-ex:implies :C1} :ruleFact ({{_:e_sk_12_1 skos-ex:implies _:e_sk_13_1.
+    _:e_sk_13_1 skos-ex:implies _:e_sk_14_1} => {_:e_sk_12_1 skos-ex:implies _:e_sk_14_1}} {{_:e_sk_8_1 skos:exactMatch _:e_sk_9_1} => {_:e_sk_8_1 skos-ex:implies _:e_sk_9_1.
+    _:e_sk_9_1 skos-ex:implies _:e_sk_8_1}}).
+{:C1 skos-ex:implies :B1} :ruleFact ({{_:e_sk_12_1 skos-ex:implies _:e_sk_13_1.
+    _:e_sk_13_1 skos-ex:implies _:e_sk_14_1} => {_:e_sk_12_1 skos-ex:implies _:e_sk_14_1}} {{_:e_sk_8_1 skos:exactMatch _:e_sk_9_1} => {_:e_sk_8_1 skos-ex:implies _:e_sk_9_1.
+    _:e_sk_9_1 skos-ex:implies _:e_sk_8_1}} {{_:e_sk_4_1 skos:broadMatch _:e_sk_5_1} => {_:e_sk_4_1 skos-ex:implies _:e_sk_5_1}} {{_:e_sk_0_1 skos:broader _:e_sk_1_1} => {_:e_sk_0_1 skos-ex:implies _:e_sk_1_1}}).
+{:A11 skos-ex:implies :B1} :ruleFact ({{_:e_sk_12_1 skos-ex:implies _:e_sk_13_1.
+    _:e_sk_13_1 skos-ex:implies _:e_sk_14_1} => {_:e_sk_12_1 skos-ex:implies _:e_sk_14_1}} {{_:e_sk_0_1 skos:broader _:e_sk_1_1} => {_:e_sk_0_1 skos-ex:implies _:e_sk_1_1}} {{_:e_sk_4_1 skos:broadMatch _:e_sk_5_1} => {_:e_sk_4_1 skos-ex:implies _:e_sk_5_1}}).
+{:A11 skos-ex:implies :A1} :dataFact ({:A11 skos:broader :A1}).
+{:B11 skos-ex:implies :B1} :dataFact ({:B11 skos:broader :B1}).
+{:A1 skos-ex:implies :B11} :dataFact ({:A1 skos:broadMatch :B11}).
+{:A1 skos-ex:implies :C1} :dataFact ({:A1 skos:exactMatch :C1}).
+{:C1 skos-ex:implies :A1} :dataFact ({:A1 skos:exactMatch :C1}).
+{:A11 skos-ex:implies :B11} :dataFact ({:A11 skos:broader :A1} {:A1 skos:broadMatch :B11}).
+{:A11 skos-ex:implies :C1} :dataFact ({:A11 skos:broader :A1} {:A1 skos:exactMatch :C1}).
+{:A1 skos-ex:implies :B1} :dataFact ({:A1 skos:broadMatch :B11} {:B11 skos:broader :B1}).
+{:A1 skos-ex:implies :A1} :dataFact ({:A1 skos:exactMatch :C1}).
+{:C1 skos-ex:implies :B11} :dataFact ({:A1 skos:exactMatch :C1} {:A1 skos:broadMatch :B11}).
+{:C1 skos-ex:implies :C1} :dataFact ({:A1 skos:exactMatch :C1}).
+{:C1 skos-ex:implies :B1} :dataFact ({:A1 skos:exactMatch :C1} {:A1 skos:broadMatch :B11} {:B11 skos:broader :B1}).
+{:A11 skos-ex:implies :B1} :dataFact ({:A11 skos:broader :A1} {:A1 skos:broadMatch :B11} {:B11 skos:broader :B1}).
+
+#2016-12-18T14:21:16.184Z in=262 out=26 ent=26 step=26 brake=2 inf=492366 sec=0.062 inf/sec=7941387
+#ENDS
+

@@ -1,0 +1,288 @@
+#Processed by EYE v16.1209.1430 beta josd
+#eye data.ttl rule.n3 --query query.n3q
+
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX skos-ex: <http://eulersharp.sourceforge.net/2003/03swap/skos-mapping-extension#>
+PREFIX : <http://www.terminology-mockup.org#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX dce: <http://purl.org/dc/elements/1.1/>
+PREFIX r: <http://www.w3.org/2000/10/swap/reason#>
+
+[] a r:Proof, r:Conjunction;
+  r:component <#lemma1>;
+  r:component <#lemma2>;
+  r:component <#lemma3>;
+  r:component <#lemma4>;
+  r:component <#lemma5>;
+  r:component <#lemma6>;
+  r:component <#lemma7>;
+  r:component <#lemma8>;
+  r:component <#lemma9>;
+  r:component <#lemma10>;
+  r:gives {
+    :A111 skos-ex:implies :A11.
+    :A11 skos-ex:implies :A1.
+    :B11 skos-ex:implies :B1.
+    :A111 skos-ex:implies :A1.
+    :A1 skos-ex:implies :B11.
+    :A11 skos-ex:implies :B11.
+    :A111 skos-ex:implies :B11.
+    :A1 skos-ex:implies :B1.
+    :A11 skos-ex:implies :B1.
+    :A111 skos-ex:implies :B1.
+  }.
+
+<#lemma1> a r:Inference; 
+  r:gives {
+    :A111 skos-ex:implies :A11.
+  }; 
+  r:evidence (
+    <#lemma11>
+  );
+  r:rule <#lemma12>.
+
+<#lemma2> a r:Inference; 
+  r:gives {
+    :A11 skos-ex:implies :A1.
+  }; 
+  r:evidence (
+    <#lemma13>
+  );
+  r:rule <#lemma12>.
+
+<#lemma3> a r:Inference; 
+  r:gives {
+    :B11 skos-ex:implies :B1.
+  }; 
+  r:evidence (
+    <#lemma14>
+  );
+  r:rule <#lemma12>.
+
+<#lemma4> a r:Inference; 
+  r:gives {
+    :A111 skos-ex:implies :A1.
+  }; 
+  r:evidence (
+    <#lemma15>
+  );
+  r:rule <#lemma12>.
+
+<#lemma5> a r:Inference; 
+  r:gives {
+    :A1 skos-ex:implies :B11.
+  }; 
+  r:evidence (
+    <#lemma16>
+  );
+  r:rule <#lemma12>.
+
+<#lemma6> a r:Inference; 
+  r:gives {
+    :A11 skos-ex:implies :B11.
+  }; 
+  r:evidence (
+    <#lemma17>
+  );
+  r:rule <#lemma12>.
+
+<#lemma7> a r:Inference; 
+  r:gives {
+    :A111 skos-ex:implies :B11.
+  }; 
+  r:evidence (
+    <#lemma18>
+  );
+  r:rule <#lemma12>.
+
+<#lemma8> a r:Inference; 
+  r:gives {
+    :A1 skos-ex:implies :B1.
+  }; 
+  r:evidence (
+    <#lemma19>
+  );
+  r:rule <#lemma12>.
+
+<#lemma9> a r:Inference; 
+  r:gives {
+    :A11 skos-ex:implies :B1.
+  }; 
+  r:evidence (
+    <#lemma20>
+  );
+  r:rule <#lemma12>.
+
+<#lemma10> a r:Inference; 
+  r:gives {
+    :A111 skos-ex:implies :B1.
+  }; 
+  r:evidence (
+    <#lemma21>
+  );
+  r:rule <#lemma12>.
+
+<#lemma11> a r:Inference; 
+  r:gives {
+    :A111 skos-ex:implies :A11.
+  }; 
+  r:evidence (
+    <#lemma22>
+  );
+  r:rule <#lemma23>.
+
+<#lemma12> a r:Extraction; 
+  r:gives {
+    {?x_0_1 skos-ex:implies ?x_1_1} => {?x_0_1 skos-ex:implies ?x_1_1}.
+  };
+  r:because [ a r:Parsing; r:source <file:///c:/users/hong/documents/github/terminologymapping/customized/query.n3q>].
+
+<#lemma13> a r:Inference; 
+  r:gives {
+    :A11 skos-ex:implies :A1.
+  }; 
+  r:evidence (
+    <#lemma24>
+  );
+  r:rule <#lemma23>.
+
+<#lemma14> a r:Inference; 
+  r:gives {
+    :B11 skos-ex:implies :B1.
+  }; 
+  r:evidence (
+    <#lemma25>
+  );
+  r:rule <#lemma23>.
+
+<#lemma15> a r:Inference; 
+  r:gives {
+    :A111 skos-ex:implies :A1.
+  }; 
+  r:evidence (
+    <#lemma26>
+  );
+  r:rule <#lemma23>.
+
+<#lemma16> a r:Inference; 
+  r:gives {
+    :A1 skos-ex:implies :B11.
+  }; 
+  r:evidence (
+    <#lemma27>
+  );
+  r:rule <#lemma28>.
+
+<#lemma17> a r:Inference; 
+  r:gives {
+    :A11 skos-ex:implies :B11.
+  }; 
+  r:evidence (
+    <#lemma13>
+    <#lemma16>
+  );
+  r:rule <#lemma29>.
+
+<#lemma18> a r:Inference; 
+  r:gives {
+    :A111 skos-ex:implies :B11.
+  }; 
+  r:evidence (
+    <#lemma15>
+    <#lemma16>
+  );
+  r:rule <#lemma29>.
+
+<#lemma19> a r:Inference; 
+  r:gives {
+    :A1 skos-ex:implies :B1.
+  }; 
+  r:evidence (
+    <#lemma16>
+    <#lemma14>
+  );
+  r:rule <#lemma29>.
+
+<#lemma20> a r:Inference; 
+  r:gives {
+    :A11 skos-ex:implies :B1.
+  }; 
+  r:evidence (
+    <#lemma13>
+    <#lemma19>
+  );
+  r:rule <#lemma29>.
+
+<#lemma21> a r:Inference; 
+  r:gives {
+    :A111 skos-ex:implies :B1.
+  }; 
+  r:evidence (
+    <#lemma15>
+    <#lemma19>
+  );
+  r:rule <#lemma29>.
+
+<#lemma22> a r:Extraction; 
+  r:gives {
+    :A111 rdfs:subClassOf :A11.
+  };
+  r:because [ a r:Parsing; r:source <file:///c:/users/hong/documents/github/terminologymapping/customized/data.ttl>].
+
+<#lemma23> a r:Extraction; 
+  r:gives {
+    {?x_0_2 rdfs:subClassOf ?x_1_2} => {?x_0_2 skos-ex:implies ?x_1_2}.
+  };
+  r:because [ a r:Parsing; r:source <file:///c:/users/hong/documents/github/terminologymapping/customized/rule.n3>].
+
+<#lemma24> a r:Extraction; 
+  r:gives {
+    :A11 rdfs:subClassOf :A1.
+  };
+  r:because [ a r:Parsing; r:source <file:///c:/users/hong/documents/github/terminologymapping/customized/data.ttl>].
+
+<#lemma25> a r:Extraction; 
+  r:gives {
+    :B11 rdfs:subClassOf :B1.
+  };
+  r:because [ a r:Parsing; r:source <file:///c:/users/hong/documents/github/terminologymapping/customized/data.ttl>].
+
+<#lemma26> a r:Inference; 
+  r:gives {
+    :A111 rdfs:subClassOf :A1.
+  }; 
+  r:evidence (
+    <#lemma22>
+    <#lemma24>
+  );
+  r:rule <#lemma30>.
+
+<#lemma27> a r:Extraction; 
+  r:gives {
+    :A1 :mapTo :B11.
+  };
+  r:because [ a r:Parsing; r:source <file:///c:/users/hong/documents/github/terminologymapping/customized/data.ttl>].
+
+<#lemma28> a r:Extraction; 
+  r:gives {
+    {?x_0_3 :mapTo ?x_1_3} => {?x_0_3 skos-ex:implies ?x_1_3}.
+  };
+  r:because [ a r:Parsing; r:source <file:///c:/users/hong/documents/github/terminologymapping/customized/rule.n3>].
+
+<#lemma29> a r:Extraction; 
+  r:gives {
+    {?x_0_4 skos-ex:implies ?x_1_4.
+      ?x_1_4 skos-ex:implies ?x_2_4} => {?x_0_4 skos-ex:implies ?x_2_4}.
+  };
+  r:because [ a r:Parsing; r:source <file:///c:/users/hong/documents/github/terminologymapping/customized/rule.n3>].
+
+<#lemma30> a r:Extraction; 
+  r:gives {
+    {?x_0_5 rdfs:subClassOf ?x_1_5.
+      ?x_1_5 rdfs:subClassOf ?x_2_5} => {?x_0_5 rdfs:subClassOf ?x_2_5}.
+  };
+  r:because [ a r:Parsing; r:source <file:///c:/users/hong/documents/github/terminologymapping/customized/rule.n3>].
+
+#2016-12-19T09:45:25.622Z in=9 out=10 ent=21 step=69 brake=3 inf=67596 sec=0.046 inf/sec=1469478
+#ENDS
+

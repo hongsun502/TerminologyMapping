@@ -1,0 +1,280 @@
+#Processed by EYE v16.1209.1430 beta josd
+#eye --nope proof.n3 proof-parser-rule.n3 --pass
+
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX skos-ex: <http://eulersharp.sourceforge.net/2003/03swap/skos-mapping-extension#>
+PREFIX : <http://www.terminology-mockup.org#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX dce: <http://purl.org/dc/elements/1.1/>
+PREFIX r: <http://www.w3.org/2000/10/swap/reason#>
+PREFIX list: <http://www.w3.org/2000/10/swap/list#>
+PREFIX e: <http://eulersharp.sourceforge.net/2003/03swap/log-rules#>
+PREFIX string: <http://www.w3.org/2000/10/swap/string#>
+PREFIX log: <http://www.w3.org/2000/10/swap/log#>
+
+_:bn_1 a r:Proof.
+_:bn_1 a r:Conjunction.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma1> a r:Inference.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma2> a r:Inference.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma3> a r:Inference.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma4> a r:Inference.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma5> a r:Inference.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma6> a r:Inference.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma7> a r:Inference.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma8> a r:Inference.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma9> a r:Inference.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma10> a r:Inference.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma11> a r:Inference.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma12> a r:Extraction.
+_:bn_2 a r:Parsing.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma13> a r:Inference.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma14> a r:Inference.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma15> a r:Inference.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma16> a r:Inference.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma17> a r:Inference.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma18> a r:Inference.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma19> a r:Inference.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma20> a r:Inference.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma21> a r:Inference.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma22> a r:Extraction.
+_:bn_3 a r:Parsing.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma23> a r:Extraction.
+_:bn_4 a r:Parsing.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma24> a r:Extraction.
+_:bn_5 a r:Parsing.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma25> a r:Extraction.
+_:bn_6 a r:Parsing.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma26> a r:Inference.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma27> a r:Extraction.
+_:bn_7 a r:Parsing.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma28> a r:Extraction.
+_:bn_8 a r:Parsing.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma29> a r:Extraction.
+_:bn_9 a r:Parsing.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma30> a r:Extraction.
+_:bn_10 a r:Parsing.
+_:bn_1 r:component <file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma1>.
+_:bn_1 r:component <file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma2>.
+_:bn_1 r:component <file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma3>.
+_:bn_1 r:component <file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma4>.
+_:bn_1 r:component <file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma5>.
+_:bn_1 r:component <file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma6>.
+_:bn_1 r:component <file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma7>.
+_:bn_1 r:component <file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma8>.
+_:bn_1 r:component <file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma9>.
+_:bn_1 r:component <file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma10>.
+_:bn_1 r:gives {:A111 skos-ex:implies :A11.
+  :A11 skos-ex:implies :A1.
+  :B11 skos-ex:implies :B1.
+  :A111 skos-ex:implies :A1.
+  :A1 skos-ex:implies :B11.
+  :A11 skos-ex:implies :B11.
+  :A111 skos-ex:implies :B11.
+  :A1 skos-ex:implies :B1.
+  :A11 skos-ex:implies :B1.
+  :A111 skos-ex:implies :B1}.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma1> r:gives {:A111 skos-ex:implies :A11}.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma2> r:gives {:A11 skos-ex:implies :A1}.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma3> r:gives {:B11 skos-ex:implies :B1}.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma4> r:gives {:A111 skos-ex:implies :A1}.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma5> r:gives {:A1 skos-ex:implies :B11}.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma6> r:gives {:A11 skos-ex:implies :B11}.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma7> r:gives {:A111 skos-ex:implies :B11}.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma8> r:gives {:A1 skos-ex:implies :B1}.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma9> r:gives {:A11 skos-ex:implies :B1}.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma10> r:gives {:A111 skos-ex:implies :B1}.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma11> r:gives {:A111 skos-ex:implies :A11}.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma13> r:gives {:A11 skos-ex:implies :A1}.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma14> r:gives {:B11 skos-ex:implies :B1}.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma15> r:gives {:A111 skos-ex:implies :A1}.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma16> r:gives {:A1 skos-ex:implies :B11}.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma17> r:gives {:A11 skos-ex:implies :B11}.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma18> r:gives {:A111 skos-ex:implies :B11}.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma19> r:gives {:A1 skos-ex:implies :B1}.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma20> r:gives {:A11 skos-ex:implies :B1}.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma21> r:gives {:A111 skos-ex:implies :B1}.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma22> r:gives {:A111 rdfs:subClassOf :A11}.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma24> r:gives {:A11 rdfs:subClassOf :A1}.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma25> r:gives {:B11 rdfs:subClassOf :B1}.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma26> r:gives {:A111 rdfs:subClassOf :A1}.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma27> r:gives {:A1 :mapTo :B11}.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma1> r:evidence (<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma11>).
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma2> r:evidence (<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma13>).
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma3> r:evidence (<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma14>).
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma4> r:evidence (<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma15>).
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma5> r:evidence (<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma16>).
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma6> r:evidence (<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma17>).
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma7> r:evidence (<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma18>).
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma8> r:evidence (<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma19>).
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma9> r:evidence (<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma20>).
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma10> r:evidence (<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma21>).
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma11> r:evidence (<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma22>).
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma13> r:evidence (<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma24>).
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma14> r:evidence (<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma25>).
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma15> r:evidence (<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma26>).
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma16> r:evidence (<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma27>).
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma17> r:evidence (<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma13> <file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma16>).
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma18> r:evidence (<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma15> <file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma16>).
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma19> r:evidence (<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma16> <file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma14>).
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma20> r:evidence (<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma13> <file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma19>).
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma21> r:evidence (<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma15> <file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma19>).
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma26> r:evidence (<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma22> <file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma24>).
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma1> r:rule <file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma12>.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma2> r:rule <file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma12>.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma3> r:rule <file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma12>.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma4> r:rule <file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma12>.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma5> r:rule <file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma12>.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma6> r:rule <file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma12>.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma7> r:rule <file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma12>.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma8> r:rule <file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma12>.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma9> r:rule <file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma12>.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma10> r:rule <file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma12>.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma11> r:rule <file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma23>.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma13> r:rule <file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma23>.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma14> r:rule <file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma23>.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma15> r:rule <file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma23>.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma16> r:rule <file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma28>.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma17> r:rule <file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma29>.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma18> r:rule <file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma29>.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma19> r:rule <file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma29>.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma20> r:rule <file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma29>.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma21> r:rule <file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma29>.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma26> r:rule <file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma30>.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma12> r:because _:bn_2.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma22> r:because _:bn_3.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma23> r:because _:bn_4.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma24> r:because _:bn_5.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma25> r:because _:bn_6.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma27> r:because _:bn_7.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma28> r:because _:bn_8.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma29> r:because _:bn_9.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma30> r:because _:bn_10.
+_:bn_2 r:source <file:///c:/users/hong/documents/github/terminologymapping/customized/query.n3q>.
+_:bn_3 r:source <file:///c:/users/hong/documents/github/terminologymapping/customized/data.ttl>.
+_:bn_4 r:source <file:///c:/users/hong/documents/github/terminologymapping/customized/rule.n3>.
+_:bn_5 r:source <file:///c:/users/hong/documents/github/terminologymapping/customized/data.ttl>.
+_:bn_6 r:source <file:///c:/users/hong/documents/github/terminologymapping/customized/data.ttl>.
+_:bn_7 r:source <file:///c:/users/hong/documents/github/terminologymapping/customized/data.ttl>.
+_:bn_8 r:source <file:///c:/users/hong/documents/github/terminologymapping/customized/rule.n3>.
+_:bn_9 r:source <file:///c:/users/hong/documents/github/terminologymapping/customized/rule.n3>.
+_:bn_10 r:source <file:///c:/users/hong/documents/github/terminologymapping/customized/rule.n3>.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma22> :fact {:A111 rdfs:subClassOf :A11}.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma23> :fact {{_:sk_0 rdfs:subClassOf _:sk_1} => {_:sk_0 skos-ex:implies _:sk_1}}.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma24> :fact {:A11 rdfs:subClassOf :A1}.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma25> :fact {:B11 rdfs:subClassOf :B1}.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma27> :fact {:A1 :mapTo :B11}.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma28> :fact {{_:sk_4 :mapTo _:sk_5} => {_:sk_4 skos-ex:implies _:sk_5}}.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma29> :fact {{_:sk_8 skos-ex:implies _:sk_9.
+    _:sk_9 skos-ex:implies _:sk_10} => {_:sk_8 skos-ex:implies _:sk_10}}.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma30> :fact {{_:sk_14 rdfs:subClassOf _:sk_15.
+    _:sk_15 rdfs:subClassOf _:sk_16} => {_:sk_14 rdfs:subClassOf _:sk_16}}.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma11> :ruleFact {{_:sk_0 rdfs:subClassOf _:sk_1} => {_:sk_0 skos-ex:implies _:sk_1}}.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma13> :ruleFact {{_:sk_0 rdfs:subClassOf _:sk_1} => {_:sk_0 skos-ex:implies _:sk_1}}.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma14> :ruleFact {{_:sk_0 rdfs:subClassOf _:sk_1} => {_:sk_0 skos-ex:implies _:sk_1}}.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma15> :ruleFact {{_:sk_0 rdfs:subClassOf _:sk_1} => {_:sk_0 skos-ex:implies _:sk_1}}.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma16> :ruleFact {{_:sk_4 :mapTo _:sk_5} => {_:sk_4 skos-ex:implies _:sk_5}}.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma17> :ruleFact {{_:sk_8 skos-ex:implies _:sk_9.
+    _:sk_9 skos-ex:implies _:sk_10} => {_:sk_8 skos-ex:implies _:sk_10}}.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma18> :ruleFact {{_:sk_8 skos-ex:implies _:sk_9.
+    _:sk_9 skos-ex:implies _:sk_10} => {_:sk_8 skos-ex:implies _:sk_10}}.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma19> :ruleFact {{_:sk_8 skos-ex:implies _:sk_9.
+    _:sk_9 skos-ex:implies _:sk_10} => {_:sk_8 skos-ex:implies _:sk_10}}.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma20> :ruleFact {{_:sk_8 skos-ex:implies _:sk_9.
+    _:sk_9 skos-ex:implies _:sk_10} => {_:sk_8 skos-ex:implies _:sk_10}}.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma21> :ruleFact {{_:sk_8 skos-ex:implies _:sk_9.
+    _:sk_9 skos-ex:implies _:sk_10} => {_:sk_8 skos-ex:implies _:sk_10}}.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma26> :ruleFact {{_:sk_14 rdfs:subClassOf _:sk_15.
+    _:sk_15 rdfs:subClassOf _:sk_16} => {_:sk_14 rdfs:subClassOf _:sk_16}}.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma1> :ruleFact {{_:sk_0 rdfs:subClassOf _:sk_1} => {_:sk_0 skos-ex:implies _:sk_1}}.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma2> :ruleFact {{_:sk_0 rdfs:subClassOf _:sk_1} => {_:sk_0 skos-ex:implies _:sk_1}}.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma3> :ruleFact {{_:sk_0 rdfs:subClassOf _:sk_1} => {_:sk_0 skos-ex:implies _:sk_1}}.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma4> :ruleFact {{_:sk_0 rdfs:subClassOf _:sk_1} => {_:sk_0 skos-ex:implies _:sk_1}}.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma5> :ruleFact {{_:sk_4 :mapTo _:sk_5} => {_:sk_4 skos-ex:implies _:sk_5}}.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma6> :ruleFact {{_:sk_8 skos-ex:implies _:sk_9.
+    _:sk_9 skos-ex:implies _:sk_10} => {_:sk_8 skos-ex:implies _:sk_10}}.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma7> :ruleFact {{_:sk_8 skos-ex:implies _:sk_9.
+    _:sk_9 skos-ex:implies _:sk_10} => {_:sk_8 skos-ex:implies _:sk_10}}.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma8> :ruleFact {{_:sk_8 skos-ex:implies _:sk_9.
+    _:sk_9 skos-ex:implies _:sk_10} => {_:sk_8 skos-ex:implies _:sk_10}}.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma9> :ruleFact {{_:sk_8 skos-ex:implies _:sk_9.
+    _:sk_9 skos-ex:implies _:sk_10} => {_:sk_8 skos-ex:implies _:sk_10}}.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma10> :ruleFact {{_:sk_8 skos-ex:implies _:sk_9.
+    _:sk_9 skos-ex:implies _:sk_10} => {_:sk_8 skos-ex:implies _:sk_10}}.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma15> :ruleFact {{_:sk_14 rdfs:subClassOf _:sk_15.
+    _:sk_15 rdfs:subClassOf _:sk_16} => {_:sk_14 rdfs:subClassOf _:sk_16}}.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma17> :ruleFact {{_:sk_0 rdfs:subClassOf _:sk_1} => {_:sk_0 skos-ex:implies _:sk_1}}.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma17> :ruleFact {{_:sk_4 :mapTo _:sk_5} => {_:sk_4 skos-ex:implies _:sk_5}}.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma18> :ruleFact {{_:sk_0 rdfs:subClassOf _:sk_1} => {_:sk_0 skos-ex:implies _:sk_1}}.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma18> :ruleFact {{_:sk_14 rdfs:subClassOf _:sk_15.
+    _:sk_15 rdfs:subClassOf _:sk_16} => {_:sk_14 rdfs:subClassOf _:sk_16}}.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma18> :ruleFact {{_:sk_4 :mapTo _:sk_5} => {_:sk_4 skos-ex:implies _:sk_5}}.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma19> :ruleFact {{_:sk_4 :mapTo _:sk_5} => {_:sk_4 skos-ex:implies _:sk_5}}.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma19> :ruleFact {{_:sk_0 rdfs:subClassOf _:sk_1} => {_:sk_0 skos-ex:implies _:sk_1}}.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma20> :ruleFact {{_:sk_0 rdfs:subClassOf _:sk_1} => {_:sk_0 skos-ex:implies _:sk_1}}.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma20> :ruleFact {{_:sk_4 :mapTo _:sk_5} => {_:sk_4 skos-ex:implies _:sk_5}}.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma21> :ruleFact {{_:sk_0 rdfs:subClassOf _:sk_1} => {_:sk_0 skos-ex:implies _:sk_1}}.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma21> :ruleFact {{_:sk_14 rdfs:subClassOf _:sk_15.
+    _:sk_15 rdfs:subClassOf _:sk_16} => {_:sk_14 rdfs:subClassOf _:sk_16}}.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma21> :ruleFact {{_:sk_4 :mapTo _:sk_5} => {_:sk_4 skos-ex:implies _:sk_5}}.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma4> :ruleFact {{_:sk_14 rdfs:subClassOf _:sk_15.
+    _:sk_15 rdfs:subClassOf _:sk_16} => {_:sk_14 rdfs:subClassOf _:sk_16}}.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma6> :ruleFact {{_:sk_0 rdfs:subClassOf _:sk_1} => {_:sk_0 skos-ex:implies _:sk_1}}.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma6> :ruleFact {{_:sk_4 :mapTo _:sk_5} => {_:sk_4 skos-ex:implies _:sk_5}}.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma7> :ruleFact {{_:sk_0 rdfs:subClassOf _:sk_1} => {_:sk_0 skos-ex:implies _:sk_1}}.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma7> :ruleFact {{_:sk_14 rdfs:subClassOf _:sk_15.
+    _:sk_15 rdfs:subClassOf _:sk_16} => {_:sk_14 rdfs:subClassOf _:sk_16}}.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma7> :ruleFact {{_:sk_4 :mapTo _:sk_5} => {_:sk_4 skos-ex:implies _:sk_5}}.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma8> :ruleFact {{_:sk_4 :mapTo _:sk_5} => {_:sk_4 skos-ex:implies _:sk_5}}.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma8> :ruleFact {{_:sk_0 rdfs:subClassOf _:sk_1} => {_:sk_0 skos-ex:implies _:sk_1}}.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma9> :ruleFact {{_:sk_0 rdfs:subClassOf _:sk_1} => {_:sk_0 skos-ex:implies _:sk_1}}.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma9> :ruleFact {{_:sk_4 :mapTo _:sk_5} => {_:sk_4 skos-ex:implies _:sk_5}}.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma10> :ruleFact {{_:sk_0 rdfs:subClassOf _:sk_1} => {_:sk_0 skos-ex:implies _:sk_1}}.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma10> :ruleFact {{_:sk_14 rdfs:subClassOf _:sk_15.
+    _:sk_15 rdfs:subClassOf _:sk_16} => {_:sk_14 rdfs:subClassOf _:sk_16}}.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma10> :ruleFact {{_:sk_4 :mapTo _:sk_5} => {_:sk_4 skos-ex:implies _:sk_5}}.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma11> :dataFact {:A111 rdfs:subClassOf :A11}.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma13> :dataFact {:A11 rdfs:subClassOf :A1}.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma14> :dataFact {:B11 rdfs:subClassOf :B1}.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma16> :dataFact {:A1 :mapTo :B11}.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma26> :dataFact {:A111 rdfs:subClassOf :A11}.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma26> :dataFact {:A11 rdfs:subClassOf :A1}.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma1> :dataFact {:A111 rdfs:subClassOf :A11}.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma2> :dataFact {:A11 rdfs:subClassOf :A1}.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma3> :dataFact {:B11 rdfs:subClassOf :B1}.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma5> :dataFact {:A1 :mapTo :B11}.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma15> :dataFact {:A111 rdfs:subClassOf :A11}.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma15> :dataFact {:A11 rdfs:subClassOf :A1}.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma17> :dataFact {:A11 rdfs:subClassOf :A1}.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma17> :dataFact {:A1 :mapTo :B11}.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma18> :dataFact {:A111 rdfs:subClassOf :A11}.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma18> :dataFact {:A11 rdfs:subClassOf :A1}.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma18> :dataFact {:A1 :mapTo :B11}.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma19> :dataFact {:A1 :mapTo :B11}.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma19> :dataFact {:B11 rdfs:subClassOf :B1}.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma20> :dataFact {:A11 rdfs:subClassOf :A1}.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma20> :dataFact {:A1 :mapTo :B11}.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma20> :dataFact {:B11 rdfs:subClassOf :B1}.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma21> :dataFact {:A111 rdfs:subClassOf :A11}.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma21> :dataFact {:A11 rdfs:subClassOf :A1}.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma21> :dataFact {:A1 :mapTo :B11}.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma21> :dataFact {:B11 rdfs:subClassOf :B1}.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma4> :dataFact {:A111 rdfs:subClassOf :A11}.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma4> :dataFact {:A11 rdfs:subClassOf :A1}.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma6> :dataFact {:A11 rdfs:subClassOf :A1}.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma6> :dataFact {:A1 :mapTo :B11}.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma7> :dataFact {:A111 rdfs:subClassOf :A11}.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma7> :dataFact {:A11 rdfs:subClassOf :A1}.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma7> :dataFact {:A1 :mapTo :B11}.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma8> :dataFact {:A1 :mapTo :B11}.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma8> :dataFact {:B11 rdfs:subClassOf :B1}.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma9> :dataFact {:A11 rdfs:subClassOf :A1}.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma9> :dataFact {:A1 :mapTo :B11}.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma9> :dataFact {:B11 rdfs:subClassOf :B1}.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma10> :dataFact {:A111 rdfs:subClassOf :A11}.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma10> :dataFact {:A11 rdfs:subClassOf :A1}.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma10> :dataFact {:A1 :mapTo :B11}.
+<file:///c:/users/hong/documents/github/terminologymapping/customized/proof.n3#lemma10> :dataFact {:B11 rdfs:subClassOf :B1}.
+
+#2016-12-19T09:45:32.134Z in=147 out=234 ent=97 step=274 brake=5 inf=307295 sec=0.062 inf/sec=4956371
+#ENDS
+

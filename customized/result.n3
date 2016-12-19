@@ -1,0 +1,46 @@
+#Processed by EYE v16.1209.1430 beta josd
+#eye --nope temp.n3 --query proof-parser-query.n3q
+
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX skos-ex: <http://eulersharp.sourceforge.net/2003/03swap/skos-mapping-extension#>
+PREFIX : <http://www.terminology-mockup.org#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX dce: <http://purl.org/dc/elements/1.1/>
+PREFIX r: <http://www.w3.org/2000/10/swap/reason#>
+PREFIX list: <http://www.w3.org/2000/10/swap/list#>
+PREFIX e: <http://eulersharp.sourceforge.net/2003/03swap/log-rules#>
+PREFIX string: <http://www.w3.org/2000/10/swap/string#>
+PREFIX log: <http://www.w3.org/2000/10/swap/log#>
+
+{:A111 skos-ex:implies :A11} :ruleFact ({{_:e_sk_0_1 rdfs:subClassOf _:e_sk_1_1} => {_:e_sk_0_1 skos-ex:implies _:e_sk_1_1}}).
+{:A11 skos-ex:implies :A1} :ruleFact ({{_:e_sk_0_1 rdfs:subClassOf _:e_sk_1_1} => {_:e_sk_0_1 skos-ex:implies _:e_sk_1_1}}).
+{:B11 skos-ex:implies :B1} :ruleFact ({{_:e_sk_0_1 rdfs:subClassOf _:e_sk_1_1} => {_:e_sk_0_1 skos-ex:implies _:e_sk_1_1}}).
+{:A111 skos-ex:implies :A1} :ruleFact ({{_:e_sk_0_1 rdfs:subClassOf _:e_sk_1_1} => {_:e_sk_0_1 skos-ex:implies _:e_sk_1_1}} {{_:e_sk_14_1 rdfs:subClassOf _:e_sk_15_1.
+    _:e_sk_15_1 rdfs:subClassOf _:e_sk_16_1} => {_:e_sk_14_1 rdfs:subClassOf _:e_sk_16_1}}).
+{:A1 skos-ex:implies :B11} :ruleFact ({{_:e_sk_4_1 :mapTo _:e_sk_5_1} => {_:e_sk_4_1 skos-ex:implies _:e_sk_5_1}}).
+{:A11 skos-ex:implies :B11} :ruleFact ({{_:e_sk_8_1 skos-ex:implies _:e_sk_9_1.
+    _:e_sk_9_1 skos-ex:implies _:e_sk_10_1} => {_:e_sk_8_1 skos-ex:implies _:e_sk_10_1}} {{_:e_sk_0_1 rdfs:subClassOf _:e_sk_1_1} => {_:e_sk_0_1 skos-ex:implies _:e_sk_1_1}} {{_:e_sk_4_1 :mapTo _:e_sk_5_1} => {_:e_sk_4_1 skos-ex:implies _:e_sk_5_1}}).
+{:A111 skos-ex:implies :B11} :ruleFact ({{_:e_sk_8_1 skos-ex:implies _:e_sk_9_1.
+    _:e_sk_9_1 skos-ex:implies _:e_sk_10_1} => {_:e_sk_8_1 skos-ex:implies _:e_sk_10_1}} {{_:e_sk_0_1 rdfs:subClassOf _:e_sk_1_1} => {_:e_sk_0_1 skos-ex:implies _:e_sk_1_1}} {{_:e_sk_14_1 rdfs:subClassOf _:e_sk_15_1.
+    _:e_sk_15_1 rdfs:subClassOf _:e_sk_16_1} => {_:e_sk_14_1 rdfs:subClassOf _:e_sk_16_1}} {{_:e_sk_4_1 :mapTo _:e_sk_5_1} => {_:e_sk_4_1 skos-ex:implies _:e_sk_5_1}}).
+{:A1 skos-ex:implies :B1} :ruleFact ({{_:e_sk_8_1 skos-ex:implies _:e_sk_9_1.
+    _:e_sk_9_1 skos-ex:implies _:e_sk_10_1} => {_:e_sk_8_1 skos-ex:implies _:e_sk_10_1}} {{_:e_sk_4_1 :mapTo _:e_sk_5_1} => {_:e_sk_4_1 skos-ex:implies _:e_sk_5_1}} {{_:e_sk_0_1 rdfs:subClassOf _:e_sk_1_1} => {_:e_sk_0_1 skos-ex:implies _:e_sk_1_1}}).
+{:A11 skos-ex:implies :B1} :ruleFact ({{_:e_sk_8_1 skos-ex:implies _:e_sk_9_1.
+    _:e_sk_9_1 skos-ex:implies _:e_sk_10_1} => {_:e_sk_8_1 skos-ex:implies _:e_sk_10_1}} {{_:e_sk_0_1 rdfs:subClassOf _:e_sk_1_1} => {_:e_sk_0_1 skos-ex:implies _:e_sk_1_1}} {{_:e_sk_4_1 :mapTo _:e_sk_5_1} => {_:e_sk_4_1 skos-ex:implies _:e_sk_5_1}}).
+{:A111 skos-ex:implies :B1} :ruleFact ({{_:e_sk_8_1 skos-ex:implies _:e_sk_9_1.
+    _:e_sk_9_1 skos-ex:implies _:e_sk_10_1} => {_:e_sk_8_1 skos-ex:implies _:e_sk_10_1}} {{_:e_sk_0_1 rdfs:subClassOf _:e_sk_1_1} => {_:e_sk_0_1 skos-ex:implies _:e_sk_1_1}} {{_:e_sk_14_1 rdfs:subClassOf _:e_sk_15_1.
+    _:e_sk_15_1 rdfs:subClassOf _:e_sk_16_1} => {_:e_sk_14_1 rdfs:subClassOf _:e_sk_16_1}} {{_:e_sk_4_1 :mapTo _:e_sk_5_1} => {_:e_sk_4_1 skos-ex:implies _:e_sk_5_1}}).
+{:A111 skos-ex:implies :A11} :dataFact ({:A111 rdfs:subClassOf :A11}).
+{:A11 skos-ex:implies :A1} :dataFact ({:A11 rdfs:subClassOf :A1}).
+{:B11 skos-ex:implies :B1} :dataFact ({:B11 rdfs:subClassOf :B1}).
+{:A111 skos-ex:implies :A1} :dataFact ({:A111 rdfs:subClassOf :A11} {:A11 rdfs:subClassOf :A1}).
+{:A1 skos-ex:implies :B11} :dataFact ({:A1 :mapTo :B11}).
+{:A11 skos-ex:implies :B11} :dataFact ({:A11 rdfs:subClassOf :A1} {:A1 :mapTo :B11}).
+{:A111 skos-ex:implies :B11} :dataFact ({:A111 rdfs:subClassOf :A11} {:A11 rdfs:subClassOf :A1} {:A1 :mapTo :B11}).
+{:A1 skos-ex:implies :B1} :dataFact ({:A1 :mapTo :B11} {:B11 rdfs:subClassOf :B1}).
+{:A11 skos-ex:implies :B1} :dataFact ({:A11 rdfs:subClassOf :A1} {:A1 :mapTo :B11} {:B11 rdfs:subClassOf :B1}).
+{:A111 skos-ex:implies :B1} :dataFact ({:A111 rdfs:subClassOf :A11} {:A11 rdfs:subClassOf :A1} {:A1 :mapTo :B11} {:B11 rdfs:subClassOf :B1}).
+
+#2016-12-19T09:45:45.538Z in=236 out=20 ent=20 step=20 brake=2 inf=439842 sec=0.109 inf/sec=4035248
+#ENDS
+

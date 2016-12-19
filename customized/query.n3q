@@ -1,0 +1,5 @@
+prefix skos: <http://www.w3.org/2004/02/skos/core#>
+prefix skos-ex: <http://eulersharp.sourceforge.net/2003/03swap/skos-mapping-extension#>
+
+{ ?a skos-ex:implies ?b. } => {  ?a skos-ex:implies ?b.}.
+

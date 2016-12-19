@@ -1,0 +1,9 @@
+prefix skos: <http://www.w3.org/2004/02/skos/core#>
+prefix skos-ex: <http://eulersharp.sourceforge.net/2003/03swap/skos-mapping-extension#>
+prefix : <http://www.terminology-mockup.org#>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+:A111 rdfs:subClassOf :A11.
+:A11 rdfs:subClassOf :A1.
+:A1 :mapTo :B11.
+:B11 rdfs:subClassOf :B1.

@@ -1,0 +1,8 @@
+#generate proof
+eye data.ttl rule.n3 --query query.n3q>proof.n3
+
+#parse proof, use pass to output the results to a temporary file.
+eye --nope proof.n3 proof-parser-rule.n3 --pass >temp.n3
+
+#query the temporary file to generate the rule fact and data fact.
+eye --nope temp.n3 --query proof-parser-query.n3q >result.n3

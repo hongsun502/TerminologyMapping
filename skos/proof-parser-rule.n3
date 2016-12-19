@@ -1,0 +1,64 @@
+prefix : <http://www.terminology-mockup.org#>
+PREFIX r: <http://www.w3.org/2000/10/swap/reason#>
+PREFIX list: <http://www.w3.org/2000/10/swap/list#>
+PREFIX e: <http://eulersharp.sourceforge.net/2003/03swap/log-rules#>
+PREFIX string: <http://www.w3.org/2000/10/swap/string#>
+PREFIX log: <http://www.w3.org/2000/10/swap/log#>
+
+# The facts extracted from files other than query are considered as fact.
+{ 
+	?lemma a r:Extraction. 
+	?lemma r:because [ r:source ?source ].
+	?source log:uri ?source_string.
+	?scope e:fail {?source_string string:contains ".n3q"}.
+	?lemma r:gives ?gives. 
+	?gives e:labelvars ?fact.
+} => {?lemma :fact ?fact.}. 
+ 
+#State a rule fact 
+#When a lemma (?lemma) uses rule (indicated by r:rule), the fact (?fact) provided by the rule lemma (?rule_lemma) is considered as a rule fact of the lemma (?lemma) that uses the rule.
+{ 
+	?lemma a r:Inference. 
+	?lemma r:rule ?rule_lemma. 
+	?rule_lemma :fact ?fact.	
+} => {
+	?lemma :ruleFact ?fact.
+}. 
+
+#Transitive of rule fact with r:evidence
+#If a lemma (?sub_lemma) that has rule fact (?fact) is used as evidence (indicated by r:evidence) of another lemma (?lemma).
+#The rule fact would be also considered as rule fact of the other lemma (?lemma).
+{ 
+	?lemma a r:Inference. 
+	?lemma r:evidence ?evidence. 
+	?evidence list:member ?sub_lemma.
+	?sub_lemma :ruleFact ?fact.
+} => {
+	?lemma :ruleFact ?fact.
+}. 
+
+
+#State a data fact 
+#If a lemma (?sub_lemma) that has :fact (?fact) is used as evidence (indicated by r:evidence) of another lemma (?lemma).
+#The :fact (?fact) would be considered as data fact of the other lemma (?lemma).
+{ 
+	?lemma a r:Inference. 
+	?lemma r:evidence ?evidence. 
+	?evidence list:member ?sub_lemma.
+	?sub_lemma :fact ?fact.
+} => {
+	?lemma :dataFact ?fact.
+}. 
+
+
+#Transitive of data fact with r:evidence
+#If a lemma (?sub_lemma) that has data fact (?fact) is used as evidence (indicated by r:evidence) of another lemma (?lemma).
+#The data fact would be also considered as data fact of the other lemma (?lemma).
+{ 
+	?lemma a r:Inference. 
+	?lemma r:evidence ?evidence. 
+	?evidence list:member ?sub_lemma.
+	?sub_lemma :dataFact ?fact.
+} => {
+	?lemma :dataFact ?fact.
+}. 
